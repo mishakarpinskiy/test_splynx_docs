@@ -66,7 +66,7 @@ It's also possible to export the same data that we imported to Splynx to a new C
 
 ![Export](export.png)
 
-After generating you can download an archive with csv file with a calls.
+After generating preview you can download an archive with csv file with a calls.
 
 
 ### History CDR
