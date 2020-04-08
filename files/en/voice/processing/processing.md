@@ -71,7 +71,7 @@ After generating you can download an archive with csv file with a calls.
 
 ### History CDR
 
-In the history, we can check the register of CDR imported, download them or delete in case that something was wrong or missed. If some history record will be deleted all the information(calls,data,messages) what this record contained - will be also deleted.
+In the history we can check the register of CDR imported, download them or delete in case that something was wrong or missed. If some history record will be deleted all the information(calls,data,messages) what this record contained - will be also deleted.
 
 ![History](history.png)
 
