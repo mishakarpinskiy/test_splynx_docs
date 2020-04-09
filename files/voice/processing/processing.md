@@ -1,77 +1,77 @@
 CDR processing
 ==========
 
-You can import a CDR(in .csv format) for charge the customer and print in his invoice the register of calls, messages or data.
+You can import a CDR (in .csv format) which can be used to charge the customer via their invoice which will show the register of calls, messages and/or data.
 
-Behind the processing menu there are 4 other pages, CDR Import, CDR Export, CDR History and CDR errors.
+Under the processing menu, there are 4 sub-menus, CDR Import, CDR Export, CDR History and CDR errors.
 ![Dashboard](dashboard_voice.png)
 
 ### Import CDR
 
-To import a CDR file you have to upload this file(in .csv format), select delimiter, enable/disable first row contains column names, select voice type(call, messages, data or mixed) and select handler("Base" handler by default). Provider selection can be missed.
+To import a CDR file you have to upload the file (in .csv format), select the delimiter, enable/disable “first row contains column names”, select voice type (call, messages, data or mixed) and select handler ("Base" handler by default). Provider selection can be skipped.
 
-*NOTE! Almost every our client has different type of CDR files, so if Splynx base handler can't process your file because of another format you should ask Splynx Support to develop a custom handler for your type of CDR files. You should send 2-3 CDR files as an example and full description(what field should be imported, what field can be missed etc.). Handler development takes few business days and it's absolutely free*
+*NOTE! Every client has a different type/structure of CDR files, so if the Splynx base handler can't process your file because of another format you can send a request to the Splynx Support team to develop a custom handler for your type of CDR files. Please send 2-3 CDR files as examples and a full description (which field should be imported, which field should be ignored etc.). The custom handler development takes a few business days however it remains a free service.*
 
 ![Description](import_description.png)
 
-Let's import some CDR file with only calls in it.
+Let's import a CDR file with a few calls.
 
-I have a csv file with only 3 calls and very simple format:
+Here we have a CSV file with 3 calls in a simple format:
 
 ![File format](file_format.png)
 
 ![Import](import_file.png)
 
-If you have messages or data records in a CDR, other appropriate columns should be selected.
+If you have any messages or data records in the CDR, other appropriate columns should be selected.
 
-*Regarding incoming calls. If your CDR file contains incoming calls, appropriate voice service must be created for a customer: with "direction" = incoming, and "phone number" = Destination number from a file(or pattern like 123{!} - means all phone number beginning with 123)*
+*Regarding incoming calls - if your CDR file contains incoming calls, the appropriate voice service must be created for a customer: with "direction" = incoming, and "phone number" = Destination number from a file (or a pattern like 123{!} - means all phone numbers beginning with 123)*
 
-Once it's load, selected the correct value in every column(step 3), and then click on preview(step 4) to check what we will get:
+Once it's loaded, selected the correct value in every column(step 3), and then click on preview (step 4) to view the output:
 
 ![preview](preview.png)
 
-Preview shows 1 error because service not found. Next 2 calls were imported as customer has 2 voice services with appropriate phone numbers:
+The preview shows 1 error because the service was not found. The next 2 calls were imported as the customer has 2 voice services with appropriate phone numbers:
 
 ![Customer](customer_services.png)
 
-We will import 2 calls and reprocess an error later after fixing:
+For now we will import the 2 calls and reprocess the error at a later stage after fixing it:
 ![Upload](import_result.png)
 
 ![Calls](calls_stat1.png)
 
- Now let's check and fix CDR errors:
+Now let's view and fix the CDR errors:
 
  ![CDR errors](error.png)
 
-To show Splynx what customer has this phone number we have to create a voice service for a customer with "Source" number as "Phone number" of service:
+In order to allow Splynx to link the CDR to the correct phone number and in turn with the correct customer we have to create a voice service for the customer with a "Source" number as "Phone number" in the service:
 
 ![create service](add_new_service.png)
 
-Now you can reprocess all errors:
+Now we can reprocess all the errors:
 
 ![Reprocess](error1.png)
 
 ![Reprocessed](reprocessed.png)
 
-Now when an error was reprocessed you can check a customer:
+Now that we have reprocessed the error we can view the voice statistics in the customer’s page:
 
 ![new call](new_call.png)
 
-If you are using voice categories in Splynx, and you have category name for every call in a CDR file, this name should be changed to category ID(under Voice/Categories), name of a category can be detected and imported using custom handler(what we can develop for you).
+If you are using voice categories in Splynx, and you have a category name for every call in the CDR file, this name should be changed to the category ID (under Voice/Categories), the name of a category can be detected and imported using a custom handler(our support team can develop it for you).
 
 
 ### Export CDR
 
-It's also possible to export the same data that we imported to Splynx to a new CDR, filtering by period and voice type.
+We can also export the same data that we imported to Splynx to a new CDR, filtering by period and voice type.
 
 ![Export](export.png)
 
-After clocking on "Export" button you can download an archive with csv file with a calls.
+After generating the file you can download an archive with the CSV file that will contain all the call records.
 
 
 ### History CDR
 
-In the history we can check the register of CDR imported, download them or delete in case that something was wrong or missed. If some history record will be deleted all the information(calls,data,messages) what this record contained - will be also deleted.
+In CDR History module, we can view the log of all CDR records imported, download them or delete them in case there is an error or some details were missed. If a historic record is deleted, all the information (calls, data, messages) it contains - will be also deleted.
 
 ![History](history.png)
 
