@@ -83,6 +83,7 @@ Table of contents
     * [Cisco routers](networking/routers_settings/cisco/cisco.md)
     * [Juniper routers](networking/routers_settings/juniper/juniper.md)
     * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
+    * [Live bandwidth usage for Mikrotik](networking/routers_settings/live_bandwidth/live_bandwidth_usage.md)
     * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
     * [Other routers](networking/routers_settings/other/other.md)
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
