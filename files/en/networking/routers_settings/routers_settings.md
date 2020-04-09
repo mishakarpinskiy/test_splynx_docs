@@ -51,6 +51,8 @@ Splynx supports different router models from different producers. Below are conf
 
 * [Mikrotik routers](/networking/routers_settings/mikrotik/mikrotik.md)
 
+* [Live bandwidth usage for Mikrotik](/networking/routers_settings/live_bandwidth/live_bandwidth_usage.md)
+
 * [Ubiquiti Edge routers](/networking/routers_settings/ubiquiti/ubiquiti.md)
 
 * [Other](/networking/routers_settings/other/other.md)
