@@ -1,15 +1,10 @@
-# Splynx site documentation
+# Splynx unofficial documentation
 
-In this repository store documentation files for Splynx site.
-After pushing to this repository, documentation in Splynx site will be automatically updated. 
+In this repository we store one of beta-versions of Splynx documentation
+
+You can visit official page of Splynx documentation following this link: https://docs.splynx.com/
 
 ### Files format description
-
-#### Translations
-
-Languages files should be placed in self directories.
-
-![Language files example](./images/languages_files.png)
 
 #### Page title
 
