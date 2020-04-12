@@ -22,7 +22,11 @@ System is successfully tested on these cloud services:
 
 Software:
 
-OS Linux: Debian 9 or Ubuntu (16.04) , PHP 7.0, MySQL server
+OS Linux:
+ - Debian 9;
+ - Ubuntu 16.04.
+
+PHP 7.0, MySQL server 5.7
 
 SSL Certificate
 
