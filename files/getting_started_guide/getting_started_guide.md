@@ -13,4 +13,4 @@ Please follow these links to get license, install the software and make first st
 
 * [ Dashboard](getting_started_guide/dashboard/dashboard.md)
 
-* [ Create swap file ](getting_started_guide/create_swap_file/create_swap_file.md)
+* [ Create swap file ](create_swap_file/create_swap_file.md)
