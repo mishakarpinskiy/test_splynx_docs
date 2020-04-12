@@ -1,7 +1,7 @@
 Install Splynx ISP Framework
 ============================
 
-**Base requirements:**
+**Requirements:**
 
 **_Clear_ Debian or Ubuntu server.**
 
