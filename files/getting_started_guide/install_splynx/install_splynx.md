@@ -1,11 +1,11 @@
 Install Splynx ISP Framework
 ============================
 
-**Base requirements:**
+**Requirements:**
 
 **_Clear_ Debian or Ubuntu server.**
 
-**Supported OS: Debian 8, 9 (without GUI) or Ubuntu 16.04 (server)**
+**Supported OS: Debian 9 (without GUI) or Ubuntu 16.04 (server)**
 
 Enter as root:
 
@@ -30,6 +30,7 @@ update-ca-certificates
 Install:
 ```bash
 wget -qO- https://deb.splynx.com/setup | bash -
+wget -qO- https://deb.splynx.com/setup_3_0 | bash -
 apt-get install splynx
 ```
 Finish installation you should from the web. Open URL in browser - http://ip_address/admin (where ip_address it's IP address of your Splynx server), add your license key and save it:
