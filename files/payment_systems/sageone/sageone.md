@@ -116,6 +116,11 @@ The transaction was also created:
 As well as the payment:
 ![customer_payment.png](customer_payment.png)
 
+Payments created in Splynx will be synced with SageOne every 24 hours.
+To check time of synchronization run this command:
+***cat /var/www/splynx/addons/splynx-sageone/config/config.ini.php***
+and find this line **"cron_launch_time"**
+
 
 **Some examples of errors which could occur:**
 
