@@ -9,6 +9,8 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 * [SageOne](sageone/sageone.md)
 
+* [Xero](Xero/xero.md)
+
 * [Authorize.net](payment_systems/authorize/authorize.md)
 
 * [Bitpay, bitcoin payments](payment_systems/bitpay/bitpay.md)
