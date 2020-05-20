@@ -244,6 +244,3 @@ Table of contents
 
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)
-
-##### API PHP Examples
-* [PHP API](api_php_examples/api.md)
