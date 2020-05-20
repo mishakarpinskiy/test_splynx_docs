@@ -1,6 +1,6 @@
 Create swap file
 ================
-Recommended size for swap file for Splynx 3.0 version - 4GB. If your server has RAM more than 4GB, swap file can be decreased.
+Recommended size for swap file for Splynx 3.0 version - 4GB. If your server has RAM more than 4GB, swap file can be reduced to 2-3GB.
 
 Copy and paste in console of your server this command:
 
