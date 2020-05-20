@@ -31,7 +31,7 @@ _Tickets_ <icon class="image-icon">![icon](dashboard6.png)</icon> - with the sta
 
 There is a **Side Menu** at the left side of the page with following modules:
 
-[Tariffs](configuring_tariff_plans/configuring_tariff_plans.md) - It shows the tariffs aspect of the system
+[Tariffs](../../configuring_tariff_plans/configuring_tariff_plans.md) - It shows the tariffs aspect of the system
 
 CRM - It shows the leads aspect of the system
 
