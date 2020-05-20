@@ -45,14 +45,14 @@ Networking / Routers - is the place where you can add and configure your network
 
 Splynx supports different router models from different producers. Below are configuration tutorials for vendors that are used most often:
 
-* [Cisco routers](/networking/routers_settings/cisco/cisco.md)
+* [Cisco routers](cisco/cisco.md)
 
-* [Juniper routers](/networking/routers_settings/juniper/juniper.md)
+* [Juniper routers](juniper/juniper.md)
 
-* [Mikrotik routers](/networking/routers_settings/mikrotik/mikrotik.md)
+* [Mikrotik routers](mikrotik/mikrotik.md)
 
-* [Live bandwidth usage for Mikrotik](/networking/routers_settings/live_bandwidth/live_bandwidth_usage.md)
+* [Live bandwidth usage for Mikrotik](live_bandwidth/live_bandwidth_usage.md)
 
-* [Ubiquiti Edge routers](/networking/routers_settings/ubiquiti/ubiquiti.md)
+* [Ubiquiti Edge routers](ubiquiti/ubiquiti.md)
 
-* [Other](/networking/routers_settings/other/other.md)
+* [Other](other/other.md)

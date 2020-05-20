@@ -16,7 +16,7 @@ When the option is **disabled** <icon class="image-icon">![](disabled.png)</icon
 When this option is **enabled** <icon class="image-icon">![](enabled.png)</icon> blocked customers are added to one of address list:
 * **SpLBL_blocked** - for customers whose status is ***Blocked***.
 * **SpLBL_new** - for customers whose status is ***New***.
-* **SpLBL_active** - for customers status is ***Active***, but service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rule.
+* **SpLBL_active** - for customers status is ***Active***, but service is blocked due to [FUP](../bandwidth_management/fup/fup.md) or [CAP](../bandwidth_management/capped_plans/capped_plans.md) blocking rule.
 
 ![Screenshot AddressList](mk_al.png)
 
@@ -41,7 +41,7 @@ When a customer becomes blocked, the splynx sends a CoA packet to the router wit
 ![](coa.png)
 
 
-The same attributes for [FUP](networking/bandwidth_management/fup/fup.md):
+The same attributes for [FUP](../bandwidth_management/fup/fup.md):
 
 ![](fup_coa.png)
 

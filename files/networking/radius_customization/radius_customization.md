@@ -13,7 +13,7 @@ We can use a lot of variables from Splynx
 
 Most of these values can be changed at the Tariff plans menu in Splynx
 
-[Internet plans description](configuring_tariff_plans/internet_plans/internet_plans.md)
+[Internet plans description](../../configuring_tariff_plans/internet_plans/internet_plans.md)
 
 
 Variable | Value | Comment |
@@ -48,7 +48,7 @@ Variable | Value | Comment |
 
 Most of these values can be changed at the `Customers/ List/customer/Services`
 
-[Customer services description](customer_management/customer_services/customer_services.md)
+[Customer services description](../../customer_management/customer_services/customer_services.md)
 
 Variable | Value | Comment |
 -------- | ----- | ------- |
@@ -73,22 +73,22 @@ Variable | Value | Comment |
 {{ service.port_id }}	| Port ID | |
 {{ service.router_id }}	| ID number or Router | |
 {{ service.sector_id }}	| ID number of Router's sector | |
-{{ service.taking_ipv4 }}	| 0 - if [Taking IPv4](customer_management/customer_services/customer_services.md) is 'None', 1 - if Taking IPv4 is 'Permanent IP', 2 - if Taking IPv4 is 'Dynamic IP' | |
+{{ service.taking_ipv4 }}	| 0 - if [Taking IPv4](../../customer_management/customer_services/customer_services.md) is 'None', 1 - if Taking IPv4 is 'Permanent IP', 2 - if Taking IPv4 is 'Dynamic IP' | |
 {{ service.ipv4_pool_id }} | ID number of [IPv4 Network](https://splynx.com/wiki/?wikipage=Networking/IPv4_networks). Can be used when Taking IPv4 = 'Dynamic IP': 0 - if Taking IPv4 is 'None' or 'Permanent IP' | |
 {{ service.ipv4 }} | IP address. Can be used when Taking IPv4 = 'Permanent IP'. Empty string - if Taking IPv4 is 'None' or 'Dynamic IP' | |
 {{ service.ipv4_route }} | Additional network | |
 
 
 ### Customer
-[Customer information description](customer_management/customer_information/customer_information.md)
+[Customer information description](../../customer_management/customer_information/customer_information.md)
 
 Variable | Value | Comment |
 -------- | ----- | ------- |
 {{ customer.id }}	| ID number of customer | |
 {{ customer.billing_type }}	| Billing type 'prepaid' or 'prepaid_monthly' or 'recurring'	| |
-{{ customer.partner_id }}	| ID number of [Partner](administration/main/partners/partners.md) | |
-{{ customer.location_id }} | ID number of [Location](administration/main/localtions/locations.md) | |
-{{ customer.added_by }}	| Login of [Admin](administration/main/admins_and_permissions/admin_and_permissions.md) who added this customer | |
+{{ customer.partner_id }}	| ID number of [Partner](../../administration/main/partners/partners.md) | |
+{{ customer.location_id }} | ID number of [Location](../../administration/main/localtions/locations.md) | |
+{{ customer.added_by }}	| Login of [Admin](../../administration/main/admins_and_permissions/admin_and_permissions.md) who added this customer | |
 {{ customer.added_by_id }} | ID number of Admin who added this customer |
 {{ customer.login }}	| Login to customers' portal |	<icon class="image-icon">![](info.png)</icon> This is not service.login |
 {{ customer.password }}	| Password to customers' portal | <icon class="image-icon">![](info.png)</icon> This is not service.password |
@@ -105,7 +105,7 @@ Variable | Value | Comment |
 
 Most of these values can be changed at the **Tariff plans** menu in Splynx
 
-[FUP description](networking/bandwidth_management/fup/fup.md)
+[FUP description](../bandwidth_management/fup/fup.md)
 
 Variable | Value | Comment |
 -------- | ----- | ------- |
