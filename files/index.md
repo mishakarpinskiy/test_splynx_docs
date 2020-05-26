@@ -165,12 +165,12 @@ Table of contents
 
 * [Support](configuration/support/support.md)
     * [Tickets](configuration/support/tickets/tickets.md)
-    * [Ticket notifications](configuration/support/tickets/ticket_notifications/tickets_notifications.md)
-    * [Ticket canned responses](configuration/support/tickets/ticket_canned_responses/responses.md)
-    * [General ticket configuration](configuration/support/tickets/general_ticket_configuration/ticket_config.md)
-    * [Feedback widget](configuration/support/tickets/feedback_widget/widget.md)
-    * [Inboxes](configuration/support/tickets/inboxes/inboxes.md)
-    * [Ticket automation](configuration/support/tickets/ticket_automation/ticket_automation.md)
+    * [Ticket notifications](configuration/support/ticket_notifications/tickets_notifications.md)
+    * [Ticket canned responses](configuration/support/ticket_canned_responses/responses.md)
+    * [General ticket configuration](configuration/support/general_ticket_configuration/ticket_config.md)
+    * [Feedback widget](configuration/support/feedback_widget/widget.md)
+    * [Inboxes](configuration/support/inboxes/inboxes.md)
+    * [Ticket automation](configuration/support/ticket_automation/ticket_automation.md)
 
 * [Network configuration](configuration/network/network.md)
 
