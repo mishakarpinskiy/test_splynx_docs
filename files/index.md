@@ -163,6 +163,15 @@ Table of contents
     * [Reminders](configuration/finance/reminders/reminders.md)
     * [Template values](configuration/finance/template_values/template_values.md)
 
+* [Support](configuration/support/support.md)
+    * [Tickets](configuration/support/tickets/tickets.md)
+    * [Ticket notifications](configuration/support/tickets/ticket_notifications/tickets_notifications.md)
+    * [Ticket canned responses](configuration/support/tickets/ticket_canned_responses/responses.md)
+    * [General ticket configuration](configuration/support/tickets/general_ticket_configuration/ticket_config.md)
+    * [Feedback widget](configuration/support/tickets/feedback_widget/widget.md)
+    * [Inboxes](configuration/support/tickets/inboxes/inboxes.md)
+    * [Ticket automation](configuration/support/tickets/ticket_automation/ticket_automation.md)
+
 * [Network configuration](configuration/network/network.md)
 
     * [Radius](configuration/network/radius/radius.md)
