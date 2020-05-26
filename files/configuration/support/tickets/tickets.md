@@ -2,6 +2,8 @@ Tickets
 =============
 **_Config -> Support -> Tickets_**
 
+![tickets icon](icon.png)
+
 ## TICKETS
 In this module you can configure sender details for [ticket notifications](../ticket_notifications/tickets_notifications.md).
 
