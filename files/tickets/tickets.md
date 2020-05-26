@@ -60,7 +60,7 @@ or in `Config > Ticket canned responses`.
 
 The  *Hidden* <icon class="image-icon">![Hidden](./hidden.png)</icon> toggle allows you to hide tickets from a customer.
 
-You are also able to create [new fields](customer_management/custom_additional_fields/custom_additional_fields.md) in the tickets module. More information about **adding custom fields** is available here - [Additional fields](configuration/system/additional_fields/additional_fields.md). Remember, that in order to see the new field in the main table, you should enable it by clicking on the breadcrumbs <icon class="image-icon">![Add](add.png)</icon> icon below the table.
+You are also able to create [new fields](../customer_management/custom_additional_fields/custom_additional_fields.md) in the tickets module. More information about **adding custom fields** is available here - [Additional fields](../configuration/system/additional_fields/additional_fields.md). Remember, that in order to see the new field in the main table, you should enable it by clicking on the breadcrumbs <icon class="image-icon">![Add](add.png)</icon> icon below the table.
 
 Once the ticket has been created, it will be visible in the `New and opened tickets` table. Here you can **filter tickets** by *Condition, Period, Customer/Lead ID, Group, Partner, Type or Type*. We've added the capability to search for specific text with the _Text search function_ or the customers full name in the _Find Filter_ field. You can also choose the list of new and opened tickets to view filtered by the administrator assigned or the status of the tickets.
 
@@ -116,7 +116,7 @@ Once a ticket has been resolved, you can change the status on *closed* and close
 
 Your customers can also create tickets in three ways:
 
-1. By sending a query to your incoming email (*support@yourdomain.com*), and the ticket will be created automatically on the system. Incoming mail configuration can be found [here](configuration/main_configuration/incoming_mail.md).
+1. By sending a query to your incoming email (*support@yourdomain.com*), and the ticket will be created automatically on the system. Incoming mail configuration can be found [here](../configuration/main_configuration/incoming_mail.md).
 
 2. By creating a ticket from Customers Portal in `Tickets > Create`
 
@@ -136,7 +136,7 @@ Once the ticket is created it is possible to view or close it by using the follo
 ![Tickets mobile app](app_ticket.jpg)
 
 There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation`
-More information about **tickets configuration** can be found here - [Support](configuration/main_configuration/support/support.md).
+More information about **tickets configuration** can be found here - [Support](../configuration/main_configuration/support/support.md).
 
 When tickets are opened by either the customer or administrator, notifications are sent to each other via email. Depending on the template you are using for tickets, tickets may include the body of the ticket and this can ultimately create convenience, as customers/administrators can respond directly from the email to respond to the ticket. If the template does not include the body, customers/administrators are able to log into their respective portals by means of a link included in the ticket notifications.
 

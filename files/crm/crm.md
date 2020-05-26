@@ -5,8 +5,8 @@ The Splynx CRM module was specially designed to ease the consuming tasks and act
 
 The system is divided into 5 sections/sub-modules:
 
-* [Dashboard](crm/dashboard/dashboard.md)
-* [Leads](crm/leads/leads.md)
-* [Quotes](crm/quotes/quotes.md)
-* [Documents](crm/documents/documents.md)
-* [Deals](crm/deals/deals.md)
+* [Dashboard](dashboard/dashboard.md)
+* [Leads](leads/leads.md)
+* [Quotes](quotes/quotes.md)
+* [Documents](documents/documents.md)
+* [Deals](deals/deals.md)
