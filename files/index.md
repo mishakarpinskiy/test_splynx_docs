@@ -96,11 +96,10 @@ Table of contents
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
-##### [Support, Tickets and Messages](support_tickets_messages/support_tickets_messages.md)
-* [Email messages](support_tickets_messages/email_messages/email_messages.md)
-* [SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
-* [Tickets](support_tickets_messages/tickets/tickets.md)
-* [News](support_tickets_messages/news/news.md)
+##### [Support messages](support_messages/support_tickets_messages.md)
+* [Email messages](support_messages/email_messages/email_messages.md)
+* [SMS messages](support_messages/sms_messages/sms_messages.md)
+* [News](support_messages/news/news.md)
 
 ##### [Voice](voice/voice.md)
 
@@ -244,3 +243,15 @@ Table of contents
 
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)
+
+##### CRM
+* [CRM](crm/crm.md)
+
+##### My profile
+* [My profile](my_profile/my_profile.md)
+
+##### Scheduling
+* [Scheduling](scheduling/scheduling.md)
+
+##### Tickets
+* [Tickets](tickets/tickets.md)

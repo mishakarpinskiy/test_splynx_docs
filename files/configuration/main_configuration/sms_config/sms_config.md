@@ -1,9 +1,9 @@
 SMS config
 =========
 
-Splynx ISP Framework supports sending of notifications and reminders to customers via SMS. For the configuration of SMS gateway you need to find a local SMS gateway and set up Splynx to work with that getaway.
+Splynx supports sending of notifications and reminders to customers via SMS. For the configuration of SMS sending you need to find a suitable SMS gateway and set up Splynx to work with it.
 
-To configure SMS sending in Splynx click on `Config→Main→SMS`.
+To configure SMS sending in Splynx navigate to `Config→Main→SMS`.
 
 ![Config menu](main_menu.png)
 
