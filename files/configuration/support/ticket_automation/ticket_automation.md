@@ -1,13 +1,15 @@
-Support
+Ticket automation
 =============
-Here you can find settings for tickets, ticket notifications, incoming emails configurations also some automation for tickets.
+We developed this feature to make a bit easier life of admins who are working with tickets.
 
-![Support](support_config.png)
+![icon](icon.png)
 
-* [Tickets](tickets/tickets.md)
-* [Ticket notifications](ticket_notifications/tickets_notifications.md)
-* [Ticket canned responses](ticket_canned_responses/responses.md)
-* [General ticket configuration](general_ticket_configuration/ticket_config.md)
-* [Feedback widget](feedback_widget/widget.md)
-* [Inboxes](inticket_automationiticket_automation.md)
-* [System](ticket_automation/ticket_automation.md)
+In this menu can be created some rules to automate work with ticket.
+
+**Example:** I want to close ticket, and reply with [canned response](../ticket_canned_responses/responses.md) to a customer if ticket has status "Waiting on customer" more than 7 days.
+
+I can achieve this goal by adding next rule:
+
+![add rule](add_rule.png)
+
+So if this rule created, all tickets with status "Waiting on customer" with time of last update more than 7 days will be closed automaticallyand customer will get email with text that this ticket was closed due to lack of activity more than 7 days(canned response with this text must be created first).
