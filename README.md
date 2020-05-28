@@ -1,9 +1,3 @@
-# Splynx unofficial documentation
-
-In this repository we store one of beta-versions of Splynx documentation
-
-You can visit official page of Splynx documentation following this link: https://docs.splynx.com/
-
 ### Files format description
 
 #### Page title
