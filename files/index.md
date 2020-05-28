@@ -172,6 +172,9 @@ Table of contents
     * [Inboxes](configuration/support/inboxes/inboxes.md)
     * [Ticket automation](configuration/support/ticket_automation/ticket_automation.md)
 
+* [Inventory](configuration/inventory/inventory.md)
+    * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
+
 * [Network configuration](configuration/network/network.md)
 
     * [Radius](configuration/network/radius/radius.md)
