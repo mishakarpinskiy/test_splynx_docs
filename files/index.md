@@ -175,6 +175,12 @@ Table of contents
 * [Inventory](configuration/inventory/inventory.md)
     * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
 
+* [CRM](configuration/crm/crm.md)
+    * [Finance](configuration/crm/finance/finance.md)
+    * [Preferences](configuration/crm/preferences/preferences.md)
+    * [Sign Up Widget](configuration/crm/sign_up_widget/widget.md)
+    * [Leads stages](configuration/crm/leads_stages/stages.md)
+
 * [Network configuration](configuration/network/network.md)
 
     * [Radius](configuration/network/radius/radius.md)
