@@ -12,4 +12,6 @@ I can achieve this goal by adding next rule:
 
 ![add rule](add_rule.png)
 
-So if this rule created, all tickets with status "Waiting on customer" with time of last update more than 7 days will be closed automaticallyand customer will get email with text that this ticket was closed due to lack of activity more than 7 days(canned response with this text must be created first).
+So if this rule created, all tickets with status "Waiting on customer" with time of last update more than 7 days will be closed automatically and customer will get email with text that this ticket was closed due to lack of activity more than 7 days(canned response with this text must be created first).
+
+##### Be attentive with "Recurrently" option as if logic of rule is incorrect it can re-work all tickets, even "Closed".
