@@ -175,6 +175,16 @@ Table of contents
 * [Inventory](configuration/inventory/inventory.md)
     * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
 
+* [Scheduling](configuration/scheduling/scheduling.md)
+    * [Workflows](configuration/scheduling/workflows/workflows.md)
+    * [Teams](configuration/scheduling/teams/teams.md)
+    * [Task templates](configuration/scheduling/task_templates/task_templates.md)
+    * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
+    * [Project types](configuration/scheduling/project_types/project_types.md)
+    * [Project categories](configuration/scheduling/project_categories/project_categories.md)  
+    * [Notifications](configuration/scheduling/notifications/notifications.md)
+
+
 * [CRM](configuration/crm/crm.md)
     * [Finance](configuration/crm/finance/finance.md)
     * [Preferences](configuration/crm/preferences/preferences.md)
