@@ -5,7 +5,7 @@ Basic settings of administrator and customer portal can be configured under `Con
 
 ![Config menu](main_menu.png)
 
-## Default landing default page
+## Default landing page
 Here you can select what page(customer or admin portal) will be opened when somebody will visit your Splynx url https://yourSplynx.com :
 
 ![default page](default_page.png)
