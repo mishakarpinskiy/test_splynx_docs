@@ -5,24 +5,24 @@ In main part of Splynx configuration is possible to select default site (Custome
 
 Please, follow the links below to find tutorial page about every single part of Main configuration:
 
-* [Preferences](configuration/main_configuration/preferences/preferences.md)
+* [Preferences](preferences/preferences.md)
 
-* [Localization](configuration/main_configuration/localization/localization.md)
+* [Localization](localization/localization.md)
 
-* [Customers](configuration/main_configuration/customers/customers.md)
+* [Customers](customers/customers.md)
 
-* [Incoming mail](configuration/main_configuration/incoming_mail/incoming_mail.md)
+* [Incoming mail](incoming_mail/incoming_mail.md)
 
-* [Email config](configuration/main_configuration/email_config/email_config.md)
+* [Email config](email_config/email_config.md)
 
-* [SMS config](configuration/main_configuration/sms_config/sms_config.md)
+* [SMS config](sms_config/sms_config.md)
 
-* [Support](configuration/main_configuration/support/support.md)
+* [Support](support/support.md)
 
-* [Portal](configuration/main_configuration/portal/portal.md)
+* [Portal](portal/portal.md)
 
-* [Cards](configuration/main_configuration/cards/cards.md)
+* [Cards](cards/cards.md)
 
-* [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
+* [Logrotate](logrotate/logrotate.md)
 
-* [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+* [SSL_activation](SSL_activation/SSL_activation.md)
