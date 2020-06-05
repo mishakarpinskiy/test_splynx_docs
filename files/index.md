@@ -137,6 +137,7 @@ Table of contents
     * [File manager](configuration/system/file_manager/file_manager.md)
     * [Templates](configuration/system/templates/templates.md)
     * [Variables for templates](configuration/system/templates_variables/templates_variables.md)
+    * [Company information](configuration/system/company_information/company_information.md)
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)
 
