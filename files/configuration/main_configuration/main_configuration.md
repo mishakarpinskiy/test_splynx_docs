@@ -11,18 +11,24 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [Customers](customers/customers.md)
 
-* [Incoming mail](incoming_mail/incoming_mail.md)
+* [API](api/api.md)
 
 * [Email config](email_config/email_config.md)
 
 * [SMS config](sms_config/sms_config.md)
 
-* [Support](support/support.md)
+* [CAP](cap/cap.md)
 
 * [Portal](portal/portal.md)
 
-* [Cards](cards/cards.md)
+* [Vouchers](vouchers/vouchers.md)
 
 * [Logrotate](logrotate/logrotate.md)
 
 * [SSL_activation](SSL_activation/SSL_activation.md)
+
+* [Stealth mode](stealth_mode/stealth_mode.md)
+
+* [Voice](voice/voice.md)
+
+* [Maps](maps/maps.md)

@@ -140,18 +140,20 @@ Table of contents
     * [Company information](configuration/system/company_information/company_information.md)
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)
-
     * [Preferences](configuration/main_configuration/preferences/preferences.md)
     * [Localization](configuration/main_configuration/localization/localization.md)
     * [Customers](configuration/main_configuration/customers/customers.md)
-    * [Incoming mail](configuration/main_configuration/incoming_mail/incoming_mail.md)
+    * [API](configuration/main_configuration/api/api.md)
     * [Email config](configuration/main_configuration/email_config/email_config.md)
     * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
-    * [Support](configuration/main_configuration/support/support.md)
+    * [CAP](configuration/main_configuration/cap/cap.md)
     * [Portal](configuration/main_configuration/portal/portal.md)
-    * [Cards](configuration/main_configuration/cards/cards.md)
+    * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
     * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+    * [Stealth mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
+    * [Voice](configuration/main_configuration/voice/voice.md)
+    * [Maps](configuration/main_configuration/maps/maps.md)
 
 * [Finance configuration](configuration/finance/finance.md)
 
