@@ -3,7 +3,7 @@ Email sending configuration
 
 To configure email sending navigate to `Config → Main → Email`.
 
-![](main_menu.png)
+![](icon.png)
 
 For each partner can be configured separate email account for sending mails.
 

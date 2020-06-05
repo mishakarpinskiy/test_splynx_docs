@@ -5,7 +5,7 @@ Splynx supports sending of SMS using different SMS gateways. To configure SMS se
 
 To configure SMS sending in Splynx navigate to `Config → Main → SMS`.
 
-![Config menu](main_menu.png)
+![Config menu](icon.png)
 
 **NOTE! Configuration will be unique for each SMS gateway.**
 
