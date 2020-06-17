@@ -1,12 +1,12 @@
 Tools
 =====
+![icon](icon.png)
 
-* [Activate services](configuration/tools/activate_services/activate_services.md)
-
-* [Adminer](configuration/tools/adminer/adminer.md)
-
-* [Export](configuration/tools/export//export.md)
-
-* [Import](configuration/tools/import/import.md)
-
-* [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
+* [Activate services](activate_services/activate_services.md)
+* [Adminer](adminer/adminer.md)
+* [Export](export//export.md)
+* [Import](import/import.md)
+* [Invoices cache](invoices_cache/invoices_cache.md)
+* [OpenVPN](VPN/vpn.md)
+* [Backup and restore](backup_restore/backup_restore.md)
+* [Update GPS coordinates](gps/gps.md)
