@@ -228,6 +228,9 @@ Table of contents
     * [Activate services](configuration/tools/activate_services/activate_services.md)
     * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
     * [Adminer](configuration/tools/adminer/adminer.md)
+    * [OpenVPN](configuration/tools/VPN/openvpn.md)
+    * [Backup and restore](configuration/tools/backup_restore/backup_restore.md)
+    * [Update GPS coordinates](configuration/tools/gps/gps.md)
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
 * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)

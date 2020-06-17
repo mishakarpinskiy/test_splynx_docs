@@ -7,6 +7,6 @@ Tools
 * [Export](export//export.md)
 * [Import](import/import.md)
 * [Invoices cache](invoices_cache/invoices_cache.md)
-* [OpenVPN](VPN/vpn.md)
+* [OpenVPN](VPN/openvpn.md)
 * [Backup and restore](backup_restore/backup_restore.md)
 * [Update GPS coordinates](gps/gps.md)
