@@ -1,0 +1,3 @@
+Daily receipt report
+====
+

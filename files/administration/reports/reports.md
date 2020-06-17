@@ -5,15 +5,16 @@ Reports
 * [Financial report per plan](financial_per_plan/fin_per_plan_report.md)
 * [Finance customers report](finance_customers/fin_customer_report.md)
 * [Customer internet usage](customer_internet_usage/usage_internet_report.md)
-* [Refill cards statistics]
-* [Blocked customers report]
-* [Future charges]
-* [Daily receipt]
-* [Charge history]
-* [Statements]
-* [Tax report]
-* [New services report]
-* [Tax(Grouped)]
-* [Customer prices&discounts]
-* [Transactions categories]
-* [Ticket reports]
+* [Refill cards statistics](refill_cards/refill_cards.md)
+* [Blocked customers report](blocked_customers/blocked_customers.md)
+* [Future charges](future_charges/future_charges.md)
+* [Daily receipt](daily_receipt/daily_receipt.md)
+* [Charge history](charge_history/charge_history.md)
+* [Statements](statements/statements.md)
+* [Tax report](tax_report/tax_report.md)
+* [Invoice report](invoice/invoice.md)
+* [New services report](new_services/new_services.md)
+* [Tax(Grouped)](tax_grouped/tax_grouped.md)
+* [Custom prices&discounts](prices_discounts/prices_discounts.md)
+* [Transactions categories](transaction_categories/transaction_categories.md)
+* [Ticket reports](ticket_report/ticket_report.md)
