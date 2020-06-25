@@ -11,6 +11,22 @@ By click on "Generate certificates" OpenVPN server certificates will be generate
 
 ![generate](generate_certs.png)
 
+Here have to be specified next parameters:
+
+**Country** - This field contains the 2-character ISO format country code. For example, GB is the valid country code for Great Britain, and US is the valid code for the United States. To locate a specific country code, you may take a look at this [page](www.nationsonline.org/oneworld/country_code_list.html);
+
+**State/province** - U.S. and Canadian customers must enter a State or Province name. Do not abbreviate. In the United States, if your organization is incorporated, for instance, in the state of Delaware, but is operating within California, use California;
+
+**City/Locality** - Mandatory field usually denotes the city in which the organization is located. Do not use abbreviations. For example, spell "Saint Louis", instead of "St. Louis". If the organization is registered only locally, for example, its business license is registered with the City Clerk; the Locality/City field must contain the name of the city where it is registered. International customers must enter either a City/Locality or a State/Province field;
+
+**Organization** - The Organization Name (corporation, limited partnership, university, or government agency) must be registered with some authority at the national, state, or city level. Use the legal name under which your organization is registered. Do not abbreviate or use any of these symbols: ! @ # $ % ^ * ( ) ~ ? > < / ;
+
+**Email** - email address of organization;
+
+**Organization Unit** - Mandatory field to differentiate between divisions within an organization, for example, "Electronic Commerce Pilot" or "Human Resources". If your organization is doing business as (DBA) a trade name, you may specify the trade or DBA name in this field.
+
+Source: https://knowledge.digicert.com/solution/SO16317.html
+
 After specifying needed parameters here click on "Generate" and wait:
 
 ![generate done](generate_done.png)
@@ -42,6 +58,7 @@ By this action "zip" archive will be downloaded with next files:
 
 I'm going to create VPN connection between Splynx(with OpenVPN server) and some desktop Ubuntu.
 
+### VPN client configuration on Ubuntu
 Let's add VPN connection in Ubuntu:
 
 ![add vpn](add_vpn.png)
@@ -65,6 +82,10 @@ Interface with given IP was created.
 ![ping](ping.png)
 
 And network what was specified in routes(when we configured client) is accessible.
+
+### VPN client configuration on Mikrotik router
+
+
 
 In Splynx status of connection changed to "Connected":
 
