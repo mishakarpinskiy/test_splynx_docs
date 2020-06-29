@@ -85,9 +85,42 @@ And network what was specified in routes(when we configured client) is accessibl
 
 ### VPN client configuration on Mikrotik router
 
+Let's add new client and configure Mikrotik router as an OpenVPN client.
+
+![2](connection2.png)
+
+Once added and files are downloaded we have to upload certificates into Mikrotik under **Files**:
+
+![files](mikrotik_files.png)
+
+Once files uploaded we have to import these certificates under **System - Certificates**:
+
+![import_certs](import_certs.png)
+
+More detailed info about how to import certificates you can find [on Mikrotik wiki](https://wiki.mikrotik.com/wiki/Manual:Create_Certificates)
+
+After all certificates imported let's create an OpenVPN client interface:
+
+![interface](interface_ovpn.png)
+
+Once it's created you will see new routes under **IP - Routes**
+
+![routes](mikrotik_routes.png)
+
+Now we need to add NAT rule under **IP - Firewall - NAT** with chain "srcnat" and "Out.Interface" = your OpenVPN client interface:
+
+![nat1](nat_general.png)
+
+and "Action" = masquerade
+
+![nat2](nat_action.png)    
+
+Now you can ping network what was unreachable before:
+
+![mikrotik_ping](mikrotik_ping.png)
 
 
-In Splynx status of connection changed to "Connected":
+After established connection in Splynx status of connection will change to "Connected":
 
 ![connected](connected.png)
 
