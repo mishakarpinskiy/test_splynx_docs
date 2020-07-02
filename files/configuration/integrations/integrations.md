@@ -2,12 +2,12 @@ Integrations
 =============
 ![icon](icon.png)
 
-* [ Hooks](configuration/integrations/hooks/hooks.md)
+* [ Hooks](hooks/hooks.md)
 
-* [ Install modules](configuration/integrations/install_modules/install_modules.md)
+* [ Install modules](install_modules/install_modules.md)
 
-* [ Main modules](configuration/integrations/main_modules/main_modules.md)
+* [ Main modules](main_modules/main_modules.md)
 
-* [ Modules list](configuration/integrations/module_list/module_list.md)
+* [ Modules list](module_list/module_list.md)
 
-* [ Add-ons](configuration/integrations/addons/addons.md)
+* [ Add-ons](addons/addons.md)
