@@ -8,6 +8,6 @@ Integrations
 
 * [ Main modules](main_modules/main_modules.md)
 
-* [ Modules list](module_list/module_list.md)
+* [ Modules list](modules_list/modules_list.md)
 
 * [ Add-ons](addons/addons.md)
