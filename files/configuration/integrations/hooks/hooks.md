@@ -1,15 +1,11 @@
 Hooks
 =============
 
-
-
 ### Cli
 
 Hook is a method of augmenting or altering the behavior of a page or application with custom callbacks. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating application (Splynx). For example, we show how to use hook and send email.
 
 To send notification on some action from Splynx you can use hooks (`Config → Integrations → Hooks`).
-
-**Attention!!!** beginning from Splynx v.1.3
 
 ![Menu](main_menu.png)
 ![Menu](main_menu1.png)

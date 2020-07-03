@@ -97,13 +97,15 @@ Once files uploaded we have to import these certificates under **System - Certif
 
 ![import_certs](import_certs.png)
 
-More detailed info about how to import certificates you can find [on Mikrotik wiki](https://wiki.mikrotik.com/wiki/Manual:Create_Certificates)
+More detailed info about how to import certificates you can find on [Mikrotik wiki](https://wiki.mikrotik.com/wiki/Manual:Create_Certificates)
 
 After all certificates imported let's create an OpenVPN client interface:
 
 ![interface](interface_ovpn.png)
 
 Once it's created you will see new routes under **IP - Routes**
+
+A PPP profile in Mikrotik should be used that's not already used by another service (in case it has an IP assigned it will use this IP from the profile and not receive the correct IP from the server)
 
 ![routes](mikrotik_routes.png)
 
