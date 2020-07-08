@@ -6,18 +6,22 @@ Finance module and its correct configuration is important part of Splynx billing
 
 Please, follow the links below to find tutorial page about every single part of Finance configuration:
 
-* [ Automation](configuration/finance/automation/automation.md)
+* [ Automation](automation/automation.md)
 
-*  [ Finance settings](configuration/finance/finance_settings/finance_settings.md)
+* [ Finance settings](finance_settings/finance_settings.md)
 
-* [ Pairing](configuration/finance/pairing/pairing.md)
+* [ Pairing](pairing/pairing.md)
 
-* [ Notifications](configuration/finance/notifications/notifications,md)
+* [ Notifications](notifications/notifications,md)
 
-* [ Payment methods](configuration/finance/payment_methods/payment_methods.md)
+* [ Payment methods](payment_methods/payment_methods.md)
 
-* [ Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
+* [ Transaction categories](transaction_categories/transaction_categories.md)
 
-* [ Reminders](configuration/finance/reminders/reminders.md)
+* [ Reminders](finance/reminders/reminders.md)
 
-* [ Template values](configuration/finance/tempplate_values/tempplate_values.md)
+* [ Cost categories](cost_categories/cost_categories.md)
+
+* [ Fixed costs](fixed_costs/fixed_costs.md)
+
+* [ Payment accounts](payment_accounts/payment_accounts.md)
