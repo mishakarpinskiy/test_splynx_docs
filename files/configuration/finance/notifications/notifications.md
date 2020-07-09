@@ -3,113 +3,162 @@ Notifications
 
 To set up Notifications click on `Config → Finance → Notifications`.
 
-![Main menu](main_menu.png)
+![Main menu](icon.png)
+
+**Note** to send notifications over Emails - [email sending](../../main_configuration/email_config/email_config.md) must be configured, and to send notifications over SMS - [sms sending](../../main_configuration/sms_config/sms_config.md) must be configured
+
+There are two main types of notifications which can be configured here: billing notifications and service notifications.
+
+![View](header.png)
+
+On Finance tab can be configured notifications for all billing types. Configuration for prepaid(daily) and prepaid(custom) are the same but separated on two different tabs. Don't forget to select partner at right top corner.
+
+# **Finance**
+
+### RECURRING
+#### Invoices
+![Finance-recurring-invoices](finance_recurring_invoices.png)
+
+Here can be configured notifications for invoices:
+
+* **Auto-send notifications after creating an invoice** - enable/disable auto send of invoices after creation;
+* **Subject** - notification email subject;
+* **Template** - email template(can be added under [Config/System/Templates/Email](../../system/templates/templates.md));
+* **Email BCC** - send copy to this email;
+* **Delay in sending notifications** - delay in hours to send notification after invoice creation;
+* **Notification days** - available days to send notification;
+* **Notification hours** - available hours to send notifications.
+
+#### Proforma invoices
+![Finance-recurring-proforma](finance_recurring_proforma.png)
+
+Here can be configured notifications for proforma invoices:
+
+* **Auto-send notifications after creating an invoice** - enable/disable auto send of proforma invoices after creation;
+* **Subject** - notification email subject;
+* **Template** - email template(can be added under [Config/System/Templates/Email](../../system/templates/templates.md));
+* **Email BCC** - send copy to this email;
+* **Delay in sending notifications** - delay in hours to send notification after proforma invoice creation;
+* **Notification days** - available days to send notification(will be send in first available day);
+* **Notification hours** - available hours to send notifications(will be send in first available hour).
+
+#### Payments
+![Finance-recurring-payments](finance_recurring_payments.png)
+
+Here can be configured notifications for payments:
+
+* **Auto-send notifications after creating payments** - enable/disable auto send of notification when payment created;
+* **Subject** - notification email subject;
+* **Template** - email template(can be added under [Config/System/Templates/Email](../../system/templates/templates.md));
+* **Email BCC** - send copy to this email;
+* **Delay in sending notifications** - delay in hours to send notification after payment creation;
+* **Notification days** - available days to send notification(will be send in first available day);
+* **Notification hours** - available hours to send notifications(will be send in first available hour).
+
+#### Blocking wave
+
+![Finance-recurring-blocking wave](finance_recurring_blocking.png)
+
+Here can be configured blocking wave notifications:
+
+* **Enable** - enable/disable sending of notification after blocking of customer;
+* **Send to** - type of notification: email, SMS or email+SMS;
+* **Subject** - subject of notification;
+* **Email template** - select template for email notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md));
+* **SMS template** - select template for SMS notification(can be added under [Config/System/Templates/SMS](../../system/templates/templates.md);
+* **Email BCC** - send copy of notification to this email;
+* **Hour of sending** - select hour to send this notification.
+
+#### Inactive wave
+
+![Finance-recurring-inactive wave](finance_recurring_inactive.png)
+
+Here can be configured inactive wave notifications:
+
+* **Enable** - enable/disable sending of notification when customer become inactive;
+* **Send to** - type of notification: email, SMS or email+SMS;
+* **Subject** - subject of notification;
+* **Email template** - select template for email notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md);
+* **SMS template** - select template for SMS notification(can be added under [Config/System/Templates/SMS](../../system/templates/templates.md));
+* **Email BCC** - send copy of notification to this email;
+* **Hour of sending** - select hour to send this notification.
 
 
-There are two main types of Notifications which can be configured here: Notifications of created Invoice, Proforma Invoice or Payment and Prepaid Notifications.
+### PREPAID
+
+Notifications for Prepaid(daily) and Prepaid(custom) has the same parameters.
+
+#### Main settings
+![Finance-prepay-main](prepay_main.png)
+
+* **Hour of sending** - select hour to send notifications.
+
+#### Blocking wave
+![Finance-prepay-blocking](prepay_blocking_wave.png)
+
+Here can be configured blocking wave notifications:
+
+* **Enable** - enable/disable sending of notification after blocking of customer;
+* **Send to** - type of notification: email, SMS or email+SMS;
+* **Subject** - subject of notification;
+* **Email template** - select template for email notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md);
+* **SMS template** - select template for SMS notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md));
+* **Email BCC** - send copy of notification to this email.
+
+#### First notifications wave
+![Finance-prepay-first](prepay_first.png)
+
+Here can be configured first wave notifications:
+
+* **Enable** - enable/disable sending of notification;
+* **Days before blocking** - amount of days before blocking to send this notification;
+* **Send to** - type of notification: email, SMS or email+SMS;
+* **Subject** - subject of notification;
+* **Email template** - select template for email notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md);
+* **SMS template** - select template for SMS notification(can be added under [Config/System/Templates/SMS](../../system/templates/templates.md);
+* **Email BCC** - send copy of notification to this email.
+
+#### Second notifications wave
+![Finance-prepay-second](prepay_second.png)
+
+Here can be configured second wave notifications:
+
+* **Enable** - enable/disable sending of notification;
+* **Days before blocking** - amount of days before blocking to send this notification;
+* **Send to** - type of notification: email, SMS or email+SMS;
+* **Subject** - subject of notification;
+* **Email template** - select template for email notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md);
+* **SMS template** - select template for SMS notification(can be added under [Config/System/Templates/SMS](../../system/templates/templates.md);
+* **Email BCC** - send copy of notification to this email.
+
+#### Third notifications wave
+![Finance-prepay-third](prepay_third.png)
+
+Here can be configured third wave notifications:
+
+* **Enable** - enable/disable sending of notification;
+* **Days before blocking** - amount of days before blocking to send this notification;
+* **Send to** - type of notification: email, SMS or email+SMS;
+* **Subject** - subject of notification;
+* **Email template** - select template for email notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md));
+* **SMS template** - select template for SMS notification(can be added under [Config/System/Templates/SMS](../../system/templates/templates.md));
+* **Email BCC** - send copy of notification to this email.
+
+So for example some customer will be blocked on 26th of current month, today we have 3th and all 3 waves notifications are enabled. First notification customer will receive 10 days before blocking(16th day of the month), second notification 5 days before blocking(21th day of the month) and third 1 day before blocking(25th day). All notifications will be send at that time what you specified in "Hour of sending".
 
 
-### Notifications of created Invoice, Proforma Invoice or Payment
+# **Services**
 
-When Invoice, Profoma Invoice or Payment will be created customer will receive a notification by email with its attachment.
+![Services](services_bundles.png)
 
-#### Invoices Notifications
+Here can be configured notifications for bundle services.
 
-![Automaticaly send notification](enable.png)
-
-You can define here the following parameters of Invoices notifications:
-
-* **Automatically send notification after creating** - enable/ disable the option of sending notifications automatically after creating the Invoice.
-* **Subject** - write the subject of notification message.
-* **Template** - choose the template for notification message.
-* **Delay in sending** - choose in how many hours notification will be sent after Invoice creation. The options are: in 1, 3, 6, 12, 24, 48, 72 hours.
-* **Working days** - select days of week when Notification will be sent. It will be sent after selected delay in hours  on the first working day and hour.
-* **Working time** - select working hours for the notification sending. Notification will be sent after selected delay in hours on the first working day.
-
-
-#### Proforma Invoices Notifications
-
-![Proforma notification enable](proforma_enable.png)
-
-The following parameters of Proforma Invoices Notifications can be set here:
-
-* **Automatically send notification after creating** - enable/ disable the option of sending notifications automatically after creating the Proforma Invoice.
-* **Subject** - write the subject of notification message.
-* **Template** - choose the template for notification message.
-* **Delay in sending** - choose in how many hours notification will be sent after creation of Proforma Invoice. The options are: in 1, 3, 6, 12, 24, 48, 72 hours.
-* **Working days** - select days of week when Notification will be sent. It will be sent after selected delay in hours  on the first working day and hour.
-* **Working time** - select working hours for the notification sending. Notification will be sent after selected delay in hours on the first working day.
-
-
-
-#### Payments Notifications
-
-![payments](payments.png)
-
-The following parameters of Proforma Invoices Notifications can be set here:
-
-* **Automatically send notification after creating** - enable/ disable the option of sending notifications automatically after creating the Payment.
-* **Subject** - write the subject of notification message.
-* **Template** - choose the template for notification message.
-* **Delay in sending** - choose in how many hours notification will be sent after the Payment creation. The options are: in 1, 3, 6, 12, 24, 48, 72 hours.
-* **Working days** - select days of week when Notification will be sent. It will be sent after selected delay in hours  on the first working day and hour.
-* **Working time** - select working hours for the notification sending. Notification will be sent after selected delay in hours on the first working day.
-* **Attach receipt** - you can enable or disable option to attach receipt.
-
-
-#### Prepaid notifications
-
-Prepaid Notifications are the same as Payment Reminders. The only difference is that **Prepaid Notifications are used in Prepaid Billing** and **Payment Reminders in Recurring billing**.
-
-Prepaid Notification is an email, SMS or email+SMS prompt sent to customers to notify them about their low balance and remind them to make a payment.
-
-![Prepaid](prepaid.png)
-
-The following parameters of Prepaid Notifications #1, #2 and # 3 can be configured here:
-
-* **Hour of sending** - choose the hour when Prepaid notification will be sent.
-* **Send notification** - enable/disable option of sending Prepaid notification
-* **Days before blocking** - choose and write how many days will be left until blocking the customer
-* **Send to** - select the sending option of prepaid notification: Mail, SMS or Mail+SMS. Information about configuring SMS can be found in our tutorial page - [SMS config](configuration/main_configuration/sms_config/sms_config.md).
-* **Subject** - write the subject of Notification message.
-* **Mail Template** - choose template for the mail notification.  
-* **SMS Template** - choose template for the SMS notification.
-
-
-If customer has Prepaid type of billing he will also be notified about his current balance in Customer `Portal → Services`.
-
-Below is an example of notification for the customer in blocked status with minus deposit on his account:
-
-![Portal - Services](portal.png)
-
-
-This is an example of active customer's notification in Customer portal after he made a payment by cash:
-
-* **Admin portal**: Payment's been received:
-
-  ![Admin portal](admin_portal.png)
-
-* **Customer portal**: customer can check his current deposit and how many days he can pay for services:
-
-  ![Customer portal](customer_portal.png)
-
-#### Ignore notifications
-
-If you need that some customers to receive notifications, and other don't receive it then you have to choose a template what will be use in notifications and set "*=== IGNORE NOTIFICATION ===*" condition in it.
-For example as on the screenshot:
-
-![1.png](1.png)
-
-![2.png](2.png)
-
-![3.png](3.png)
-
-Now all customers except customers whos *billing type - is not prepaid*, after creating invoice,  Proforma invoices and Payments will get a notification with text: "example *customers login*"
-
-![4.png](4.png)
-
-Notification will not be sent to customers with *billing type == prepaid*
-
-
-**See variables for templates on:**
-https://docs.splynx.com/configuration/system/templates_variables
+* **Enable** - enable/disable sending of notification;
+* **Ignore automatic renewal** - Notification will not send if bundle is automatic renewal;
+* **Days before ending** - amount of days before end of bundle contract;
+* **Send to** - type of notification: email, SMS or email+SMS;
+* **Subject** - subject of notification;
+* **Email template** - select template for email notification(can be added under [Config/System/Templates/Email](../../system/templates/templates.md));
+* **SMS template** - select template for SMS notification(can be added under [Config/System/Templates/SMS](../../system/templates/templates.md));
+* **Email BCC** - send copy of notification to this email;
+* **Hour of sending** - select hour to send notifications.
