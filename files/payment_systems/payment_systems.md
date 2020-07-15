@@ -45,7 +45,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 * [SagePay Pay now](sagepay_pay_now/sagepay_pay_now.md)
 
-* [SagePay Direct Debit](sagepay_dd/sagepay_dd.md)  
+* [Netcash Debit Order](netcash_do/netcash_do.md)  
 
 * [Moneris (recurring billing) payments](moneris/moneris.md)
 
