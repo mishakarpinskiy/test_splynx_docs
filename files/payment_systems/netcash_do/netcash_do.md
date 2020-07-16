@@ -63,7 +63,7 @@ Invoices can be charged by full invoice amount or by customer balance:
 
 ![charge balances.png](charge_balances.png)
 
-If you will charge invoices using charge by balances customer will be charged not with invoice amount, but with amount of available money on customer account.
+If you will charge invoices using charge by balances customer will be charged not with invoice amount, but with amount of available money on customer account. Example: customer has an invoice with amount 10 in current month, but balance of account -100(customer didn't pay for 10 month) so customer will be charged with amount 100 but not 10. Be very attentive when using balances charge. 
 
 
 After that splynx will create and send debit batch file with payment details to the [*https://netcash.co.za/*](https://netcash.co.za/) after what Netcash procces this file.
