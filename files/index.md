@@ -268,7 +268,7 @@ Table of contents
 * [Pesapal](payment_systems/pesapal/pesapal.md)
 * [Paystack](payment_systems/paystack/paystack.md)
 * [SagePay Pay now](payment_systems/sagepay_pay_now/sagepay_pay_now.md)
-* [SagePay Direct Debit](payment_systems/sagepay_dd/sagepay_dd.md)
+* [Netcash debit order](payment_systems/netcash_do/netcash_do.md)
 * [Moneris](payment_systems/moneris/moneris.md)
 * [PayU Africa](payment_systems/payu/payu.md)
 * [Paynow Zimbabwe](payment_systems/paynow/paynow.md)
