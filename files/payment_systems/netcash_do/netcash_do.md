@@ -1,7 +1,7 @@
 Netcash Debit Order(former SagePay direct debit)
 ====================
 
-**Netcash Debit Order is a Splynx add-on(previously SagePay direct debit) . It used to customers be able to pay their invoices by https://netcash.co.za/**
+**Netcash Debit Order is a Splynx add-on(previously SagePay direct debit). It used to customers be able to pay their invoices by https://netcash.co.za/**
 
 Install the add-on with commands from terminal:
 
@@ -47,11 +47,13 @@ These values have to be placed under **Config → Integrations → Modules list 
 You can also set fee for customers and set admins roles to access from admin panel.
 Also admins can be notified when customer created Netcash payment account - to enable it use "Notifications settings".
 
-To add Netcash payment account navigate to customer's "Billing" tab and click on + on Payment accounts window:
+To add Netcash payment account navigate to customer's "Billing" tab and click on card icon on Payment accounts window:
 
 ![add account.png](add_account_from_admin.png)
 
 here admin can add Netcash payment account for customer with given bank account details or directly add credit card details.
+
+Also payment account can be added by click on "+" button but in this way account can be added without validation with Netcash. Recommended method - using card icon to add account with validation.
 
 When customers have Netcash payment account admin can charge their invoices all at one time.
 
@@ -63,7 +65,7 @@ Invoices can be charged by full invoice amount or by customer balance:
 
 ![charge balances.png](charge_balances.png)
 
-If you will charge invoices using charge by balances customer will be charged not with invoice amount, but with amount of available money on customer account. Example: customer has an invoice with amount 10 in current month, but balance of account -100(customer didn't pay for 10 month) so customer will be charged with amount 100 but not 10. Be very attentive when using balances charge. 
+If you will charge invoices using charge by balances customer will be charged not with invoice amount, but with amount of available money on customer account. Example: customer has an invoice with amount 10 in current month, but balance of account -100(customer didn't pay for 10 month) so customer will be charged with amount 100 but not 10. Be very attentive when using balances charge.
 
 
 After that splynx will create and send debit batch file with payment details to the [*https://netcash.co.za/*](https://netcash.co.za/) after what Netcash procces this file.
