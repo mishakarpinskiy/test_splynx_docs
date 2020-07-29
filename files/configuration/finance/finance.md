@@ -25,3 +25,5 @@ Please, follow the links below to find tutorial page about every single part of 
 * [ Fixed costs](fixed_costs/fixed_costs.md)
 
 * [ Payment accounts](payment_accounts/payment_accounts.md)
+
+* [ Taxes](taxes/taxes.md)
