@@ -16,6 +16,11 @@ To configure the Radius click on `Config → Networking → Radius`.
 * **Reject IP 3** - Reject IP range when user has wrong MAC address (if enabled) or other error;
 * **Reject IP 4** - Reject IP range when user has entered wrong password.
 
+If you are going to use reject pools, mschap and mschapv2 have to be disabled on a router. Reject IP pools are intended for:
+
+1. Reduce router load. Customers won't "attack" router with new connections attempts;
+2. By using reject IP pools some resources can be allowed for customer's connections with these IPs(ex. portal, payment systems etc);
+3. Redirection to blocking pages.
 
 Select the NAS type you are going to use and click on **Load** button. You can use one by default or create a new NAS type. Information about NAS type creation is available [here](configuration/network/nas_types/nas_types.md)
 
