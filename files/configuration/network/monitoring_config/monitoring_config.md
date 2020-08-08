@@ -1,37 +1,44 @@
-Monitoring config
+Monitoring configuration
 =================
 
 To configure Monitoring click on `Config → Networking → Monitoring`.
 
-![](menu.png)
+![icon](icon.png)
 
-There you can:
-1. Add new Producers by adding their names.
+### Vendors
+![vedors](vendors.png)
 
-  ![Create producer](1.png)
+Here we have a list of vendors. You can add/edit or remove vendors using buttons, to add new vendor click on "+" button at the right top corner.
 
-  You can also edit or delete Producer here by clicking on icons ![](edit_icon.png) and ![](delete_icon.png):
+### Device types
+![devices](device_types.png)
 
-  ![Producers](producers.png)
+Here we have a list of device types. To add new device type click on "+" button.
 
+### Groups
+![groups](groups.png)
 
-2. Add new Device types:
+Here we have a list of groups for monitoring notifications. To edit existed group click on edit button and to add new group click on "+" button:
 
-  ![Device types](device_types.png)
+![add_group](add_group.png)
 
-  You can also edit or delete them here by clicking on icons ![](edit_icon.png) and ![](delete_icon.png):
+Let's add group "Tech" with next parameters:
 
-  ![Device types](device_types2.png)
+* **Delay time for notification** - If the device does not change status during this delay (in minutes), a notification will be sent;
 
+* **Administrators for notifications** - select administrators for this group who will receive notification;
 
-3. Create Groups for custom notifications:
+* **Notifications to Splynx** - enable/disable notification on Splynx admin web page when admin is online;
 
-  ![Groups](groups.png)
+* **Notification to email** - send notifications to email;
 
-  ![Edit groups](edit_group.png)
+* **Notification email template** - select template of email notification;
 
-  * **Group** - Set name of group.
-  * **Administrators for notifications** - Choose administrators who will recieve notificaitons.
-  * **Notifications to Splynx** - Enable Splynx notifications.
-  * **Notifications to email** - Enable email notifications.
-  * **Notifications via sms** - Enable sms notifications.
+* **Notification via SMS** - send SMS notifications;
+
+* **Notification SMS template** - select template of SMS notification;
+
+### Monitoring backups
+![backups](monitoring_backups.png)
+
+Select SSH timeout for monitoring backups.

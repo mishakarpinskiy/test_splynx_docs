@@ -3,12 +3,14 @@ NAS types
 
 To configure NAS types click on `Config → Networking → NAS types`.
 
-![](menu.png)
+![icon](icon.png)
 
-It is possible here to edit default ones or create new.
+Here NAS types can be edited/added/removed.
 
-![Nas types](nas_type.png)
+![Nas types](list.png)
 
-You can write the name of new NAS type and enable MikroTik API.
+Click on "Add" button to add new NAS type:
 
-![Create NAS](create_nas.png)
+![Create NAS](add.png)
+
+If this NAS type can use Mikrotik API - enable this option.
