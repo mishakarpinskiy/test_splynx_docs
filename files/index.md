@@ -291,3 +291,12 @@ Table of contents
 * [Tickets](tickets/tickets.md)
 
 ##### [FAQ](faq/faq.md)
+* [Configuration](faq/configuration/configuration.md)
+
+* [Finance](faq/finance/finance.md)
+
+* [General questions](faq/general/general.md)
+
+* [Networking](faq/networking/networking.md)
+
+* [Server side](faq/server/server.md)
