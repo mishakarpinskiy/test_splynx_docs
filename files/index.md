@@ -289,3 +289,5 @@ Table of contents
 
 ##### Tickets
 * [Tickets](tickets/tickets.md)
+
+##### [FAQ](faq/faq.md)
