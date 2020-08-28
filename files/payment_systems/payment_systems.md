@@ -43,7 +43,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 * [PayU Africa](payu/payu.md)
 
-* [SagePay Pay now](sagepay_pay_now/sagepay_pay_now.md)
+* [Netcash](netcash/netcash.md)
 
 * [Netcash Debit Order](netcash_do/netcash_do.md)  
 
