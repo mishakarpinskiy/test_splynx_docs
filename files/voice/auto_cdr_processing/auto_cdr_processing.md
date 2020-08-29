@@ -3,7 +3,7 @@ Auto processing
 
 The Voice auto CDR processing is managed here. We can import a CDR's to charge the customer and print the register of calls in his invoice.
 
-The process is similar to Voice/Processing/CDR import, but here we can import many CDR's together automatically.
+The process is similar to [Voice -> Processing -> CDR import](../processing/processing.md), but here we can import many CDR's together automatically.
 
 Firstly, to import CDR's you need to go to the **Config -> Voice -> Import data source** and add CRD's location.
 
