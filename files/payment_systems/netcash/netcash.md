@@ -31,7 +31,7 @@ After installation an addon has to be configured, to do this navigate to **Confi
 
 ![netcash profile](netcash_profile.png)
 
-Under "Payment notifications" section you have to configure Accept URL, Decline URL and Re-direct URL with value of next format: **https://yourSplynx.com/netcash/result**.
+Under "Payment notifications" section you have to configure Accept URL, Decline URL and Re-direct URL with value of next format: **https://yourSplynx.com/netcash/result**(Splynx URL + /netcash/result).
 
 
 All the rest parameters can not to be changed or you can configure here additional service fee(if needed) and other common settings.
