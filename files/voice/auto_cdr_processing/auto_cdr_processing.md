@@ -53,7 +53,7 @@ We will use next format of CDR files(it's very simple format so we can not to us
 
 ![File format](test_cdr_format.png)
 
-**Very important thing is to have 1 file with calls per 1 day, because Splynx checks name of a file and if file with this name was imported to Splynx, after that file was updated - Splynx won't re-load this updated file as file with this name was already imported.**
+**Very important thing is that each file must be with unique name, because Splynx checks name of a file and if file with this name was imported to Splynx and after that file was updated - Splynx won't re-load this updated file as file with this name was already imported.**
 
 Now, when data source is added, you need to go to the **Config -> Voice -> Auto CDR processing** and add auto processing unit:
 
@@ -92,7 +92,7 @@ Here we specified:
 
 As we have strict and simple format of files we have specified columns regarding to our file format. If you are using handler - columns configuration can be ignored.
 
-After that Auto CDR processing is added, you can run it manually,  from **Config -> Voice -> Auto CDR processing** and press "Run import" button. Before running import we recommend to check files preview what will be imported:
+After that Auto CDR processing is added, you can run it manually(to test how it works, after successful test results auto import can be enabled to do all this stuff automatically(described at the end of this document)),  from **Config -> Voice -> Auto CDR processing** and press "Run import" button. Before running import we recommend to check files preview what will be imported:
 
 ![files preview](files_preview.png)
 
