@@ -81,7 +81,7 @@ After all certificates imported let's create an OpenVPN client interface:
 Once the interface added it should be enough to link Splynx and Mikrotik router.
 
 #### Pay attention!
-Sometimes it's needed to add default routes using OpenVPN client interface, so in this case you can enable option "Add default router" under interface but make sure that you need this before enable as it can broke your routing. If you enabled this option - some router should be created under **IP - Routes** .
+Sometimes it's needed to add default routes using OpenVPN client interface, so in this case you can enable option "Add default route" under interface but make sure that you need this before enable as it can broke your routing. If you enabled this option - some router should be created under **IP - Routes** .
 
 A PPP profile in Mikrotik should be used that's not already used by another service (in case it has an IP assigned it will use this IP from the profile and not receive the correct IP from the server)
 
