@@ -58,6 +58,50 @@ By this action "zip" archive will be downloaded with next files:
 
 I'm going to create VPN connection between Splynx(with OpenVPN server) and some desktop Ubuntu.
 
+### VPN client configuration on Mikrotik router
+
+Let's add new client and configure Mikrotik router as an OpenVPN client.
+
+![2](connection2.png)
+
+Once added and files are downloaded we have to upload certificates into Mikrotik under **Files**:
+
+![files](mikrotik_files.png)
+
+Once files uploaded we have to import these certificates under **System - Certificates**:
+
+![import_certs](import_certs.png)
+
+More detailed info about how to import certificates you can find on [Mikrotik wiki](https://wiki.mikrotik.com/wiki/Manual:Create_Certificates)
+
+After all certificates imported let's create an OpenVPN client interface:
+
+![interface](interface_ovpn1.png)
+
+Once the interface added it should be enough to link Splynx and Mikrotik router.
+
+#### Pay attention!
+Sometimes it's needed to add default routes using OpenVPN client interface, so in this case you can enable option "Add default router" under interface but make sure that you need this before enable as it can broke your routing. If you enabled this option - some router should be created under **IP - Routes** .
+
+A PPP profile in Mikrotik should be used that's not already used by another service (in case it has an IP assigned it will use this IP from the profile and not receive the correct IP from the server)
+
+![routes](mikrotik_routes.png)
+
+Next setup is also needed in some cases, so make sure that you need this before creation of NAT rule, as it can broke the routing.
+
+If you need this NAR rule, we can add it under **IP - Firewall - NAT** with chain "srcnat" and "Out.Interface" = your OpenVPN client interface:
+
+![nat1](nat_general.png)
+
+and "Action" = masquerade
+
+![nat2](nat_action.png)    
+
+Now you can ping network what was unreachable before:
+
+![mikrotik_ping](mikrotik_ping.png)
+
+
 ### VPN client configuration on Ubuntu
 Let's add VPN connection in Ubuntu:
 
@@ -82,44 +126,6 @@ Interface with given IP was created.
 ![ping](ping.png)
 
 And network what was specified in routes(when we configured client) is accessible.
-
-### VPN client configuration on Mikrotik router
-
-Let's add new client and configure Mikrotik router as an OpenVPN client.
-
-![2](connection2.png)
-
-Once added and files are downloaded we have to upload certificates into Mikrotik under **Files**:
-
-![files](mikrotik_files.png)
-
-Once files uploaded we have to import these certificates under **System - Certificates**:
-
-![import_certs](import_certs.png)
-
-More detailed info about how to import certificates you can find on [Mikrotik wiki](https://wiki.mikrotik.com/wiki/Manual:Create_Certificates)
-
-After all certificates imported let's create an OpenVPN client interface:
-
-![interface](interface_ovpn.png)
-
-Once it's created you will see new routes under **IP - Routes**
-
-A PPP profile in Mikrotik should be used that's not already used by another service (in case it has an IP assigned it will use this IP from the profile and not receive the correct IP from the server)
-
-![routes](mikrotik_routes.png)
-
-Now we need to add NAT rule under **IP - Firewall - NAT** with chain "srcnat" and "Out.Interface" = your OpenVPN client interface:
-
-![nat1](nat_general.png)
-
-and "Action" = masquerade
-
-![nat2](nat_action.png)    
-
-Now you can ping network what was unreachable before:
-
-![mikrotik_ping](mikrotik_ping.png)
 
 
 After established connection in Splynx status of connection will change to "Connected":
