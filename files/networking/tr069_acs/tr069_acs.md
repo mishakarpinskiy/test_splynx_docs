@@ -98,11 +98,34 @@ Under groups you can create new entries to group devices.
 
 ![groups](groups.png)
 
-Here can be selected next parameters and inventory product code(if existed), selected photo of device etc. If "Auto provisioning" enabled you can use next tool:
+Here can be selected next parameters and inventory product code(if existed), selected photo of device etc. You can use next tool to grab some parameters from a device:
+
+Groups are using for auto-provision devices and load device's parameters and properties from correct TR069 attributes.
+
+Once some device is added you can create a group base on that device, provision configuration parameters from this device and edit them and save. After that these parameters can be used for configuration of other devices from this group using existed parameters.
 
 ![wizzard](wizzard.png)
 
-Need to be described.
+We have a few options here:
+
+- **I have one fully configured device (and ready to reset configuration, (I have backup of full config)** - this option can be used when you have configured one device(Device 1) of this type and you need to configure another clear device(Device 2) with existed parameters. Splynx will grab parameters from Device 1, check what parameters can be used for Device 2 configuration and pull these changes. Or you have a backup what can be used for configuration;
+
+- **I have one non configured device and ready to configure this device (or i have backup of config and ready to apply it on next steps)** - vice versa to a previous method;
+
+- **I have two similar devices (One is fully configured, and one is not configured)** - need 2 devices, one is fully configured and another one not-configured. Configuration from both routers will be downloaded after that this config can be updated;
+
+- **I have one device and ready to play with manual insert of parameters** - download configuration from a device and edit this config manually.
+
+After this step you will see a window with available attributes:
+
+![provisioning attributes](provisioning_attributes.png)
+
+You can add new items or edit existing. In the select field you can select one attribute or select option - *template* or *value*.
+
+If you select *template* option you can use twig to create field value. If *value* - you can only set some static value.
+
+![provisioning 2](provisioning_2.png)
+
 
 Also you can view recently added custom attributes here:
 
@@ -177,6 +200,8 @@ On **Tasks** tab you will see pending tasks(like you run a wi-fi password change
 
 On **Faults** tab you will see tasks what were executed with errors.
 
+![faults-tasks](tasks-faults.png)
+
 When click on **Actions** button you can find next options:
 
 ![actions](actions.png)
@@ -186,7 +211,7 @@ When click on **Actions** button you can find next options:
 - *Run provisioning* - run provisioning for a device;
 - *Send file* - send some file to a device;
 - *Factory reset* - reset to factory settings;
-- *Delete* - delete this device from the ACS.
+- *Delete* - delete this device from the ACS(if the device connected to the network it will return to the list. TR-069 client need to be disabled on a device).
 
 ![device setup](device_setup.png)
 
@@ -201,6 +226,14 @@ As an example we can change a DHCP server parameters:
 or add some firewall rules right here:
 
 ![firewall rules](firewall_rules.png)
+
+On a *Diagnostic* tab you can find diagnostic tools like ping, traceroute, upload/download statistic and wifi-analyzer:
+
+![diagnostic](diagnostic.png)
+
+To run some diagnostic tool click on "Run" button near each tool.
+
+Wi-fi analyzer shows all available wi-fi networks and signal strength near a device.
 
 Debug logs can be found under **Administration / Logs / Files** and find files by word "genie":
 
