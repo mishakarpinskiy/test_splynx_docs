@@ -22,7 +22,11 @@ Let's start configuring the ACS server:
 
 ##### Step 1
 
-Navigate to **Config/Networking/TR-069(ACS)** and specify global parameters:
+Navigate to **Config/Networking/TR-069(ACS)** and install the ACS server:
+
+![install](install.png)
+
+Once installed specify global parameters:
 
 ![global config](config.png)
 
@@ -211,7 +215,7 @@ When click on **Actions** button you can find next options:
 - *Run provisioning* - run provisioning for a device;
 - *Send file* - send some file to a device;
 - *Factory reset* - reset to factory settings;
-- *Delete* - delete this device from the ACS(if the device connected to the network it will return to the list. TR-069 client need to be disabled on a device).
+- *Delete* - delete this device from the ACS(if the device connected to the network it will return to the list. TR-069 client need to be disabled on a device in case you don't want this device to appear on the ACS again).
 
 ![device setup](device_setup.png)
 
