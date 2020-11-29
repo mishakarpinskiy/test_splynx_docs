@@ -175,7 +175,7 @@ That's all. After that you should see next:
 
 Should appear "Connection Request Username" and "Connection Request Password" - do not change these parameters(only when you need to reconnect this device with an ACS, these values can be removed and re-enable client - with new connection you will see new values).
 
-**NOTE** that if you are using HTTPS/SSL on your Splynx server you can get an error about SSL, asking for the local certificate. In this case you need to run 2 commands in Mikrotik terminal:
+**Important note for Mikrotik devices** that if you are using HTTPS/SSL on your Splynx server you can get an error about SSL, asking for the local certificate. In this case you need to run 2 commands in Mikrotik terminal:
 
 ```
 /tool fetch https://letsencrypt.org/certs/trustid-x3-root.pem.txt
