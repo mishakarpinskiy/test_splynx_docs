@@ -13,4 +13,4 @@ This section is separated into the following sections, please click on each sect
 
 * [Last Login](last_login/last_login.md)
 
-* [Scheduling](scheduling/shceduling.md)
+* [Scheduling](scheduling/scheduling.md)
