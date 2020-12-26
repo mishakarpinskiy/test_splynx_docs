@@ -242,3 +242,26 @@ Wi-fi analyzer shows all available wi-fi networks and signal strength near a dev
 Debug logs can be found under **Administration / Logs / Files** and find files by word "genie":
 
 ![logs](logs.png)
+
+
+# Files and upgrades
+
+Under **Files** you can upload some update files, or configuration files for a devices.
+
+![files](files.png)
+
+To upload a new file click on "Add file":
+
+![add file](upload_file.png)
+
+Once files uploaded you can use them to upgrade a devices under **Upgrades** menu:
+
+![upgrade](upgrade.png)
+
+Now we see devices for the upgrade(from this group) and some parameters for an update can be specified.
+
+![update 2](new_update.png)
+
+![ready for upgrade](ready_for_update.png)
+
+Click on this button to update a device.
