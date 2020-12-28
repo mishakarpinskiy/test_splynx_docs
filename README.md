@@ -2,7 +2,7 @@
 
 #### Page title
 
-Each page should be begin from the page title.
+Each page should be begin from the page title:
 
 ```
 Page Title
