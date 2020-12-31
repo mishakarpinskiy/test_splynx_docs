@@ -129,7 +129,6 @@ Also you can view custom attributes here:
 
 ![view attributes](display_attributes.png)
 
-
 ##### Attributes:
 
 Here can be added some custom attributes to be displayed under ACS devices in Splynx. For example we need to display a DNS attribute on the main info of device:
@@ -146,7 +145,11 @@ Once some devices are added and you have groups available, click on "Attributes 
 
 ![attributes config](load_attributes.png)
 
-Select a device and click on "Load" button to load attributes. I'll use a Mikrotik device as an example. Once it's done you'll be able to use attributes like "Device.DHCPv4.Client.1.DHCPServer" and once configured you'll see an attribute on the device overview.
+Select a device and click on "Load" button to load attributes. I'll use a Mikrotik device as an example. Once it's done you'll be able to use attributes:
+
+![available attributes](available_attributes.png)
+
+and once configured you'll see an attribute on the device overview.
 
 ### Connect the device
 
