@@ -84,12 +84,6 @@ Main parameters for ACS are configured, you can use this feature now. Also we ha
 
 ![additional config](more_config.png)
 
-##### Attributes:
-
-Here can be added some custom attributes to be displayed under ACS devices in Splynx. For example we need to display a DNS attribute on the main info of device:
-
-![attributes](attributes.png)
-
 ##### Types:
 
 Simply add different types of devices:
@@ -131,11 +125,28 @@ If you select *template* option you can use twig to create field value. If *valu
 ![provisioning 2](provisioning_2.png)
 
 
-Also you can view recently added custom attributes here:
+Also you can view custom attributes here:
 
 ![view attributes](display_attributes.png)
 
-Need to be described.
+
+##### Attributes:
+
+Here can be added some custom attributes to be displayed under ACS devices in Splynx. For example we need to display a DNS attribute on the main info of device:
+
+![attributes](attributes.png)
+
+Once attribute is added you need to connect some devices to proceed with configuration of attributes.
+
+You will be able to display all these attributes:
+
+![genie_attrtbiutes](genie_attributes.png)
+
+Once some devices are added and you have groups available, click on "Attributes config" near some group:
+
+![attributes config](load_attributes.png)
+
+Select a device and click on "Load" button to load attributes. I'll use a Mikrotik device as an example. Once it's done you'll be able to use attributes like "Device.DHCPv4.Client.1.DHCPServer" and once configured you'll see an attribute on the device overview.
 
 ### Connect the device
 
