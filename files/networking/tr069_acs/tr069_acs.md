@@ -106,23 +106,31 @@ Once some device is added you can create a group base on that device, provision 
 
 We have a few options here:
 
+![wizzard options](wizzard_options.png)
+
 - **I have one fully configured device (and ready to reset configuration, (I have backup of full config)** - this option can be used when you have configured one device(Device 1) of this type and you need to configure another clear device(Device 2) with existed parameters. Splynx will grab parameters from Device 1, check what parameters can be used for Device 2 configuration and pull these changes. Or you have a backup what can be used for configuration;
 
 - **I have one non configured device and ready to configure this device (or i have backup of config and ready to apply it on next steps)** - vice versa to a previous method;
 
 - **I have two similar devices (One is fully configured, and one is not configured)** - need 2 devices, one is fully configured and another one not-configured. Configuration from both routers will be downloaded after that this config can be updated;
 
-- **I have one device and ready to play with manual insert of parameters** - download configuration from a device and edit this config manually.
+- **I have one device and ready to play with manual insert of parameters** - download configuration from a device and edit this config manually;
+
+- **I have a configuration file for import and want to import this file** - in this step you need to import a .csv file with a configuration what can be imported;
+
+- **I want to insert config manually** - manual way to configure a device;
 
 After this step you will see a window with available attributes:
 
 ![provisioning attributes](provisioning_attributes.png)
 
-You can add new items or edit existing. In the select field you can select one attribute or select option - *template* or *value*.
+You can add new items or edit existing. In the select field you can select one attribute or select a lot of other options.
 
-If you select *template* option you can use twig to create field value. If *value* - you can only set some static value.
+If you select *template* option you can use twig to create field value.
 
-![provisioning 2](provisioning_2.png)
+By click on additional button near "Save" button you can preview settings, export settings in a .csv format(for future use for configuration of other devices) or import a .csv file with settings.
+
+![provisioning 2](auto_provisioning_tools.png)
 
 
 Also you can view custom attributes here:
