@@ -253,11 +253,13 @@ or add some firewall rules right here:
 
 ![firewall rules](firewall_rules.png)
 
-On a *Diagnostic* tab you can find diagnostic tools like ping, traceroute, upload/download statistic and wifi-analyzer:
+On *Diagnostic* tab you can find diagnostic tools like ping, traceroute, upload/download statistic and wifi-analyzer:
 
 ![diagnostic](diagnostic.png)
 
 To run some diagnostic tool click on "Run" button near each tool.
+
+**NOTE! This menu can differ depending on a device. These screenshots were made on a Mikrotik.**
 
 Wi-fi analyzer shows all available wi-fi networks and signal strength near a device.
 
