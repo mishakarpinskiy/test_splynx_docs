@@ -140,12 +140,21 @@ tail -f /var/www/splynx/logs/radius/debug.log
 
 If splynx_radd debug doesn’t show us anything, we can try to run freeradius daemon in debug mode and see if any packets are received by Radius server.
 
-Run CLI commands:
+Run CLI commands to get output in the console:
 ```
 service freeradius stop; freeradius -Xxxx
 ```
-and check the CLI console output.
+or this command to write all collected log into a log file:
 
+```
+service freeradius stop && freeradius -Xxxx | tee Debugxxx.log
+```
+
+wait for 2-5 minutes to collect some data and stop execution of this command by press **Ctrl+C** and start freeradius in a regular mode:
+
+```
+service freeradius start
+```
 
 If you don’t see any debug messages when customer tries to connect to Mikrotik Router, it means that your router cannot send packets and connect to Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
 
