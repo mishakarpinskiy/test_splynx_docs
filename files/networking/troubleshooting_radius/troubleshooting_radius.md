@@ -132,7 +132,7 @@ service splynx_radd restart
 ```
 
 Now we can check the debug file, again it’s accessible from CLI of Linux Splynx server:
-`/var/www/splynx/logs/radius/debug.log` 
+`/var/www/splynx/logs/radius/debug.log`
 The best way to check the file is command
 ```
 tail -f /var/www/splynx/logs/radius/debug.log
@@ -148,6 +148,8 @@ and check the CLI console output.
 
 
 If you don’t see any debug messages when customer tries to connect to Mikrotik Router, it means that your router cannot send packets and connect to Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
+
+**Make sure that UDP ports 1812(authentication) and 1813(accounting) are opened on a router. These ports by default are using for RADIUS authentication and accounting.**
 
 On Mikrotik Router there is also availability to run extended debug to see what exactly router is sending to Radius server:
 
