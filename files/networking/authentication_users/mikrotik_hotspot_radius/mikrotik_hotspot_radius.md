@@ -1,7 +1,7 @@
-Mikrotik: Hotstpot, Radius
+Mikrotik: Hotstpot with Radius
 ==========
 
-#### Hostpot configuration on Mikrotik router
+### Hostpot configuration on Mikrotik router
 
 First configuration steps for Hotspot Radius authentication are the same as for other types of Radius authentication.
 
@@ -80,6 +80,12 @@ And client is online in Splynx, where we can see his session and current usage:
 
 If we would like to close the session of the customer, there is an option(marked by red pointer) in Splynx how to close the session and enforce customer to reconnect.
 
+Also possible setup with assigned static IP in Splynx(set static IP under internet service):
+
+![online static IP](service_online_static_IP.png)
+
+![hotspot active static IP](hs_active_static_IP.png)
+
 ### Hotspot authentication using cookies
 
 When client is already authenticated, Mikrotik can store in cache his information for certain period of time and don't ask him to enter username and password again. Authenticated customer is put to cookies with lifetime specified in settings.
@@ -89,7 +95,7 @@ For example, we don't want to ask customer for a password for 24 hours. So, if h
 ![Hotspot radius cookies](hs_cookie.png)
 
 
-#### Hotspot MAC authentication
+### Hotspot MAC authentication
 
 Splynx can recognise the MAC address of customer if it is set to his internet service. If MAC authentication is enabled in Hotspot server profile and MAC is set in customer's service, then the login page will not appear for such customer and he will get internet access immediately.
 
@@ -103,12 +109,26 @@ Setting the MAC address of client to his internet service
 ![MAC](service_mac.png)
 
 
-#### Blocking of hostpot users
+### Blocking of hostpot users
 
 If client has a static/permanent IP address assigned to the service, than blocking is made via putting IP address to the address list and further redirect. In case of dynamic IP address, the hotspot IP of client is mapped to one of IPs from the blocking range of Splynx. To get more information about blocking customers, please, read our tutorial page - [blocking customers in Splynx](blocking_customers/blocking_customers.md)
 
+#### How to allow some resources for customers
+Let's say you need to allow access to some resource https://example.com for blocked customers, it can be achieved using **Wallen garden** option of Hotspot:
 
-#### Setting different values to Radius attributes
+![wallen garden](wallen_garden.png)
+
+Simply select "Dst.Host" and action = "allow" to bypass traffic to needed resource without Hotspot authentication.
+
+Mikrotik walled garden allows users to create an exception rule to bypass certain devices on the LAN from hotspot authentication. While the Mikrotik hotspot is one of the much appreciated features in the Mikrotik routerOS, without the use of the Mikrotik walled garden, it will be impossible to connect devices like servers and printers to a network placed behind a hotspot server.
+
+Let's say you have a server with IP 10.10.10.19 what will be connected to a hotspot and you need to provide a stable connection without authentication - you can use next setup:
+
+![bypass IP](bypass_IP.png)
+
+With this rule enabled the device 10.10.10.19 won't need to authenticate on Hotspot server. 
+
+### Setting different values to Radius attributes
 
 In `Config → Networking → Radius` is field available for setting additional attributes.
 
