@@ -126,7 +126,7 @@ Let's say you have a server with IP 10.10.10.19 what will be connected to a hots
 
 ![bypass IP](bypass_IP.png)
 
-With this rule enabled the device 10.10.10.19 won't need to authenticate on Hotspot server. 
+With this rule enabled the device 10.10.10.19 won't need to authenticate on Hotspot server.
 
 ### Setting different values to Radius attributes
 
