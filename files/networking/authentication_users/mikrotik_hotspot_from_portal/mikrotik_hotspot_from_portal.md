@@ -37,8 +37,8 @@ It can be configured under _Config / Main / Portal_ on tab "Per partner settings
   * **Automatic, after login to portal** - customer will be logged in to Hotspot automatically just after entering to Splynx portal;
   * **Click to login button** - Hotspot login button will appear on the Splynx portal page. Customer will be logged in to Hotspot after he press this button.
 
-  ![hotspot login](mobile3.jpeg)
-  
+  ![hotspot login button](hs_login_button.png)
+
   * **Disabled** - Hotspot login button will appear on the Splynx portal page. Customer won't be logged in to Hotspot after he press this button.
   * **Hotspot status page**
   * **Enabled** - show Mikrotik Hotspot status and statistic after successful login;
