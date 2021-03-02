@@ -118,6 +118,6 @@ Once customer replied - admin will see this message under Communication tab:
 
 ![enabled access](access_settings.png)
 
-It means that _splynx_ admin can view Inbox of that admin who allowed this but if _splynx_ admin has no configured IMAP under **My profile** he won't see any messages:
+It means that _splynx_ admin can view Inbox and messages under _Communication_ tab under customer profile of that admin who allowed this but if _splynx_ admin has no configured IMAP under **My profile** he won't see any messages:
 
 ![splynx admin inbox](splynx_admin_inbox.png)
