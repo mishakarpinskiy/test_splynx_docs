@@ -290,13 +290,10 @@ Table of contents
 ##### Tickets
 * [Tickets](tickets/tickets.md)
 
-##### [FAQ](faq/faq.md)
-* [Configuration](faq/configuration/configuration.md)
+##### [FAQ]
+* [Finance](faq/finance.md)
 
-* [Finance](faq/finance/finance.md)
+* [General questions](faq/general.md)
 
-* [General questions](faq/general/general.md)
+* [Networking](faq/networking.md)
 
-* [Networking](faq/networking/networking.md)
-
-* [Server side](faq/server/server.md)
