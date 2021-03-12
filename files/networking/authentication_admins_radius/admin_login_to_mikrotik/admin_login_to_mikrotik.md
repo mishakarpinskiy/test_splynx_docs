@@ -66,8 +66,8 @@ Click on actions button (2) to see more details:
 First of all we need to add next details to a RADIUS configuration file. It's located on a Splynx server, file name is `/etc/freeradius/3.0/clients.conf`:
 ```
 client private-network-1 {
-    ipaddr          = 192.168.100.0
-    netmask         = 24
+    ipaddr = 192.168.100.0
+    netmask = 24
     secret = q1w2e3r4t5
     shortname = test_local_nas
     virtual_server = splynx
