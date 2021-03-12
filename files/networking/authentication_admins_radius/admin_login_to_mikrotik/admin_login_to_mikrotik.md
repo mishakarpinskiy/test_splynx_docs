@@ -1,54 +1,89 @@
 Admin login to Mikrotik routers
 ==========
 
-It is possible to authenticate administrators locally on the router or using the Splynx Radius server.
+Using this feature Splynx administrators can login to a Mikrotik router with credentials of their account in Splynx.
 
-To configure the Radius Server, click on `Config → Networking → Radius` and click on load at the bottom of the page.
+First of all this option should be enabled under `Config → Networking → Radius`:
 
-![Radius](radius.png)
+![Config/Networking/Radius](config_radius.png)
 
-![Load](load.png)
+select *Mikrotik* NAS type(1) and click on Load button(2) and scroll down:
 
-Turn the mode Use admin login on:
+![Load Mikrotik RADIUS parameters](load_mikrotik_radius_config.png)
 
-![Radius](radius2.png)
+and enable this option(1) and save the configuration(2):
 
-Select the router you want to configure with Radius. Click on `Networking → List`, select the router and write down the Radius secret password that is going to be used in the router Radius configuration.
+![Use admin login](use_admin_login.png)
 
-![Radius secret](radius_secret.png)
+Once this done open a router under `Networking/Routers/List` and save a RADIUS secret to use it on a RADIUS server configuration(on a Mikrotik router):
 
-Open Winbox, click on System → User and the User List window will pop up. Click on AAA (Authentication and Accounting), flag Use Radius.
-![Radius secret](aa.png)
+![Router in Splynx](router_in_splynx.png)
 
+Open Winbox, click on `System → Users`. Click on `AAA` button (1), enable `Use RADIUS` (2) and apply settings (3).
 
-Click on `System → User`, the User List window will pop up. Select the tab *Active Users*, click on Radius, click on the default service and flag the Radius service you want to use: *ppp, hotspot, dhcp, login*. Insert the Radius Server, the Radius secret password, the source address of the interface connected to the Radius server.
-
-![Radius source](radius_source.png)
-
-In Splynx, click on `Administration → Administrators`, click on Add and fill up the administrator's fields.
-
-![Administrators](administrators.png)
-
-![Create administrator](create_admin.png)
-
-It is possible to chose **the role of the administrator:** Administrator, Customer Creator, Financial Manager, Manager, Super Administrator. In Router access (radius) the default permission are: read, write, full.
-
-It is possible to edit, change the permissions or delete the administrator with <icon class="image-icon">![Icons](conf_administrator.png)</icon>.
-
-Now, if you try to connect the new Administrator to the winbox-router, you will see the new user created with the Radius server in User list.
-
-![Sysadmin](sysadmin.png)
-
-It is possible to see all operations of each Administrator. Click on `Administration → Logs → Operation`.
-
-![Logs](logs_operations.png)
+![System-Users-AAA](mikrotik_users.png)
 
 
-If you click on <icon class="image-icon">![](operation_details.png)</icon>, you will see a pop up window with the operation in details.
-![Operation details](operation_details2.png)
+Once this done let's configure RADIUS server:
+
+![Radius server](radius_server.png)
+
+Enable service `login` (4) and some other services what you need.
+
+For `Address` field (1) specify Splynx IP, `Secret` field (2) have to be the same as a RADIUS secret on a router in Splynx, `Src. Address` (3) - router IP.
+
+In Splynx, under `Administration → Administrators` select some administrator and specify a level of router access:
+
+![Administrators](splynx_admin.png)
+
+We will setup a full access to a router for administrator with login *splynx* and save the changes.
+
+Once this done we can open a Winbox(or any other method of login) and using credentials of administrator *splynx* login to a router. After successful login a current user will be displayed under `Active Users` under router's `System - Users` tab:
+
+![active users](active_users.png)
+
+A sign **R** near Active User record means that this user was authenticated by RADIUS server.
+
+You can track each router login/logout to a router using this method. To see logs navigate to `Administration → Logs → Operation` and search by action "Login to router" or "Logout from router":
+
+![Administration-Logs-Operations](logs_operations.png)
+
+to see more details click on this button:
+
+![Logs details](logs_operations_details.png)
+
+Also this action will be logged in a `short.log` under `Administration/Logs/Files`:
+
+![short.log](radius_short.png)
+
+Click on actions button (2) to see more details:
+
+![short log details](radius_short_details.png)
 
 
-If you need a short log of the Radius login, click on `Administration → Logs → Operation` and click on the icon <icon class="image-icon">![Operation details](logs_files_actions.png)</icon>
+### How to configure CPE admin RADIUS login when NAS device not configured in Splynx
 
-![Logs](logs_operations.png)
-![Radius shortlog](radius_shortlog.png)
+First of all we need to add next details to a RADIUS configuration file. It's located on a Splynx server, file name is `/etc/freeradius/3.0/clients.conf`:
+```
+client private-network-1 {
+    ipaddr          = 192.168.100.0
+    netmask         = 24
+    secret = q1w2e3r4t5
+    shortname = test_local_nas
+    virtual_server = splynx
+}
+```
+Where:
+* `q1w2e3r4t5` - GLOBAL RADIUS secret;
+* `192.168.100.0` - network address;
+* `24` - network mask.
+
+CPE configuration(command line commands):
+```
+/radius add address=Radius_server_IP secret=Radius_secret service=login
+/user aaa set use-radius=yes
+```
+
+and finally enable this option under `Config/Networking/Radius extended`:
+
+![administrative access](administrative_access.png)
