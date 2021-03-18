@@ -113,23 +113,25 @@ Setting the MAC address of client to his internet service
 
 If client has a static/permanent IP address assigned to the service, than blocking is made via putting IP address to the address list and further redirect. In case of dynamic IP address, the hotspot IP of client is mapped to one of IPs from the blocking range of Splynx. To get more information about blocking customers, please, read our tutorial page - [blocking customers in Splynx](blocking_customers/blocking_customers.md)
 
-#### How to allow some resources for customers
-Let's say you need to allow access to some resource https://example.com for blocked customers, it can be achieved using **Wallen garden** option of Hotspot:
+### How to allow some resources for customers
+Let's say you need to allow access to some resource https://splynx.com for blocked customers, it can be achieved using **Wallen garden** option of Hotspot:
 
 ![wallen garden](wallen_garden.png)
 
-Simply select "Dst.Host" and action = "allow" to bypass traffic to needed resource without Hotspot authentication.
+Simply specify "Dst.Host", select "Server" and action = "accept" to bypass traffic to needed resource without Hotspot authentication.
 
 Mikrotik walled garden allows users to create an exception rule to bypass certain devices on the LAN from hotspot authentication. While the Mikrotik hotspot is one of the much appreciated features in the Mikrotik routerOS, without the use of the Mikrotik walled garden, it will be impossible to connect devices like servers and printers to a network placed behind a hotspot server.
-
-Let's say you have a server with IP 10.10.10.19 what will be connected to a hotspot and you need to provide a stable connection without authentication - you can use next setup:
-
-![bypass IP](bypass_IP.png)
-
-With this rule enabled the device 10.10.10.19 won't need to authenticate on Hotspot server.
 
 ### Setting different values to Radius attributes
 
 In `Config → Networking → Radius` is field available for setting additional attributes.
 
 To understand the usage of Radius attributes customization, please, follow the guide - [Radius server customization](radius_customization/radius_customization.md)
+
+
+### Useful resources
+
+https://wiki.mikrotik.com/wiki/Manual:Hotspot_Introduction
+https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot
+https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot/Walled_Garden
+https://wiki.mikrotik.com/wiki/Manual:Customizing_Hotspot
