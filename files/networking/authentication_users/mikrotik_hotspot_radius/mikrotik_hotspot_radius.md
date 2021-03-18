@@ -132,6 +132,9 @@ To understand the usage of Radius attributes customization, please, follow the g
 ### Useful resources
 
 https://wiki.mikrotik.com/wiki/Manual:Hotspot_Introduction
+
 https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot
+
 https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot/Walled_Garden
+
 https://wiki.mikrotik.com/wiki/Manual:Customizing_Hotspot
