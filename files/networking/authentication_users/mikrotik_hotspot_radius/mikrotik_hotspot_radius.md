@@ -118,7 +118,7 @@ Let's say you need to allow access to some resource https://splynx.com for block
 
 ![wallen garden](wallen_garden.png)
 
-Simply specify "Dst.Host", select "Server" and action = "accept" to bypass traffic to needed resource without Hotspot authentication.
+Under tab "Wallen Garden IP" and a new record and simply specify "Dst.Host", select "Server" and action = "accept" to bypass traffic to needed resource without Hotspot authentication.
 
 Mikrotik walled garden allows users to create an exception rule to bypass certain devices on the LAN from hotspot authentication. While the Mikrotik hotspot is one of the much appreciated features in the Mikrotik routerOS, without the use of the Mikrotik walled garden, it will be impossible to connect devices like servers and printers to a network placed behind a hotspot server.
 
