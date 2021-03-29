@@ -1,7 +1,6 @@
 Monitoring
 ==========
 
-
 Splynx monitoring is based on SNMP and Ping tools.
 
 The following pictures show SNMP logs and RRD charts. We are using RRD as a technology for data logging and generating charts.
