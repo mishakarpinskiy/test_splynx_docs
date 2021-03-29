@@ -138,6 +138,7 @@ So as per device configuration an administrator from a group "Engineers" should 
 
 ![email_alert](email_alert.png)
 
+### Other
 
 Charts and SNMP values from Monitoring can be used in [Splynx Weathermap add-on](../weathermaps/weathermaps.md) as on example below:
 
