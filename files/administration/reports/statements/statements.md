@@ -18,16 +18,16 @@ and here is the result for single customer:
 
 ![for_customer](result_for_customer.png)
 
-Once you have filtered the table/report to display data of your preference, you can then download a PDF copy of the report/table with the use of the "Generate PDF" button located within the filter. After this it will be 2 options available:
+Once you have filtered the table/report to display data of your preference, you can then download a PDF copy of the report/table with the use of the "Generate PDF" button located within the filter. Once generated, two options will become available:
 
 ![generated](generated_ready_to_send.png)
 
 1. **Download generated** - download the result in PDF format;
 
-2. **Send to customers** - send the personal result for each customer in this list.  
+2. **Send to customers** - send the statement to each customer in this list.  
 
-On a tab _FINANCE CUSTOMERS REPORT_  can be generated a bit simpler finance report:
+On the tab _FINANCE CUSTOMERS REPORT_  you can generate a simpler finance report:
 
 ![finance](finance_customers_report.png)
 
-Just select a period (1) and status of customers and click on **Show** (2). In can be exported using export button on the left bottom corner.
+Just select the period (1) and the status of the customer and click on **Show** (2). In can be exported using the export button on the left bottom corner.
