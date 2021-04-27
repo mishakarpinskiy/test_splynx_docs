@@ -1,28 +1,67 @@
-Mikrotik: Local auth, API
+Mikrotik: Local authentication via API
 ==========
 
-Instead of using Radius, Splynx is able to push authentication rules for customers to Mikrotik router via API. Advantage of this approach is that rules for authentication are created in routers and are stored there locally. It means, if Splynx or Radius server will not respond, customers will still  be able to get Internet access. Disadvantage is that router should be always specified in customer settings where customer is connected. Also customers can only get permanent IP from Splynx.
+Instead of using Radius, Splynx is able to push authentication rules for customers to Mikrotik router via API.
+
+* **Advantage:**
+ * rules for authentication are created in routers and stored there locally. It means, if Splynx or Radius server will not respond, customers will be able to get the Internet access.
 
 
-Authentication rules can be added via API:
-
-* PPP Secrets
-* DHCP Leases
-* Hotspot users
-
-In all types of API authentication is important to have Mikrotik API enabled on router and also in Splynx router settings:
-
-![Router mikrotik](static_ip_api.png)
-![API port](api_port.png)
+* **Disadvantages:**
+ * under internet service settings in Splynx router must be specified;
+ * only static IPs assignment method will work (because API is writing queue and secret/lease to router and IP should be specified).
 
 
-When both things are enabled, it's useful to create a special admin account for Splynx, which will be used for API login to router and making changes there. You can create special access group with the following permissions and then include admin to this group:
+Authentication rules can be added via API for:
 
-![Group](group.png)
+* PPP Secrets;
+* DHCP Leases;
+* Hotspot users.
 
-![User](user.png)
+### Step 0 - add a router and configure API connection
+
+In all these types of API authentication is important to have Mikrotik API enabled on router and also in Splynx router settings:
+
+![Router_mikrotik](router_in_splynx_1.png)
+
+On the _Mikrotik_ tab enable API, set login, password and port, and click on test connection button - the result have to be successful.
+
+![API_test](router_in_splynx_2.png)
+
+
+We recommend to user an API user with group of permissions = full on a Mikrotik as we constantly add new features what might require more permissions. This API user can be configured with `Allowed address = Splynx IP` to be accessible only for Splynx server:
+
+![api_user](api_user.png)
 
 Below are described all types of API authentication and how Splynx covers it with Mikrotik RouterOS:
+
+
+### DHCP Leases via API
+
+On a Mikrotik router we have a DHCP server running, routing is configured and  API connection between Splynx and the router established. Now we need to make next steps in Splynx:
+
+1. Select method of `Authorization/Accounting = DHCP (Leases) / API accounting` under router settings:
+
+![dhcp](router_in_splynx_1.png)
+
+
+2. Create the internet service for the customer with selected router and `IPv4 assignment method = Permanent IP (from static IPs)` and MAC address of customer's equipment (you can specify 1,2 or more MAC addresses in this field depending on Splynx settings).
+
+![service](service.png)
+
+**NOTE!! Only permanent IP works in API authentication**
+
+Now try to connect customer's device to the Internet. Once connected an active DHCP lease should be visible under *IP -> DHCP server -> Leases* on a router:
+
+![Lease](dhcp_lease.png)
+
+And customer is online in Splynx:
+
+![Online](customer_online_dhcp.png)
+
+Once customer is blocked, internet access will be limited for a customer and under *IP -> Firewall -> Address Lists* you will see this record:
+
+![blocked_dhcp](blocked_dhcp.png)
 
 
 ### Mikrotik PPP Secrets via API
@@ -39,23 +78,6 @@ Then in internet service of customer should be selected a router where Splynx wi
 After saving, Splynx will connect to router and create entries in `PPP → Secrets`:
 
 ![Secret API](secrets_api.png)
-
-
-### Mikrotik DHCP Leases via API
-
-Please choose DHCP leases as type of authentication in Spynx router settings.
-
-![DHCP/API](aa_dhcp.png)
-
-In internet service of customer should be selected a router where Splynx will push authentication rules and also grab statistics from. It is important to set the MAC address of the customer. Only permanent IP works in API authentication because of limitations in grabbing accounting from Mikrotik IP accounting:
-
-![Edit service](edit_service1.png)
-
-When we save the service information, Splynx connects to the router and adds static DHCP Leases in *IP → DHCP Server → Leases*
-
-![Leases](leases.png)
-
-In settings of DHCP server you can set an option, that all non authenticated customers will get IPs from fake pool and all authenticated users will get IPs which are set in Leases by Splynx.
 
 
 
