@@ -68,7 +68,7 @@ To create a new plan you need to specify data amount, price, validity, transacti
 
 It's really important to inform the customer about amount of used data to avoid "surprises" when the Internet is not available and the customer wasn't notified.
 
-For this purpose we developer a flexible system of CAP notifications:
+For this purpose we developed a flexible system of CAP notifications:
 
 ![notifications](notification.png)
 
@@ -88,6 +88,13 @@ Under `Source` field you can select which data will be used for notification:
 
 Click on `Add notification` button to add a new notification of `Load notifications from another tariff` to load previously created notifications from another tariff plan.
 
+## Preview and test configuration
+
+Once CAP or FUP is configured you can preview and test settings under `FUP preview and test` tab. Here you need to select "Day of the week", "Time of the day" (1), some values for "download/upload" (2) and "Online time" and click on "Preview" button (3) to get the result.
+
+![fup_preview](fup_preview.png)
+
+In according to our CAP configuration (monthly limit 100GB) when customer will use a monthly limit Splynx will decrease speed by 90% and maximum speed will be 10 Mbps / 10 Mbps.
 
 ## Examples
 
